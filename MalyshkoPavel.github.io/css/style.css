@@ -1,23 +1,22 @@
 /*CSS Reset*/
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
+html, body, div, span, h1, h2, h3, h4, h5, h6, 
+p, a, em, img, ol, ul, li,
+table, thead, tr, th, td,
+article, aside, footer, header,
+menu, nav, section {
 	margin: 0;
 	padding: 0;
 	border: 0;
 	font-size: 100%;
 	font: inherit;
 	vertical-align: baseline;
+}
+/*Float*/
+.left {
+    float: left;
+}
+.right {
+    float: right;
 }
 
 /*Clearfix*/
@@ -28,43 +27,51 @@ time, mark, audio, video {
 }
 
 /*General*/
-.layout {
-    overflow: hidden;
+html, body {
+    width: 100%;
+    height: 100%;
+}
+body {
     min-width: 600px;
-    max-width: 1020px;
-    margin: 0 auto;
-    background-color: #353a33;
-    color: white;
-    font-family: "Century Gothic";
+    background-color: #eff1d8;
+    font-family: "Century Gothic", sans-serif;
 }
 
 /*Header*/
 header {
     height: 110px;
+    background-color: #353a33;
+    color: white;
+    line-height: 110px;
 }
 .logo {
-    float: left;
-    width: 9%;
+    display: table; 
+    position: relative;
     height: 100%;
-    background: url(../img/flu.png) no-repeat right center;
+    margin: 0 0 0 50px;
+    padding: 0 0 0 55px; 
+    font-size: 2em;
+    color: inherit;
+    text-decoration: none;
 }
-.slogan {
-    float: left;
-    margin-top: 30px;
-    margin-left: 5px;
-    text-align: right;
-    font-size: 31px;
-    line-height: 0.7em;
+.logo-img {
+    position: absolute;
+    top: 30px;
+    left: 0;
 }
-.slogan span {
+.logo-txt {
+    display: table-cell;
+    vertical-align: middle;
+    height: 100%;
+    line-height: 0.75em;
+}
+.logo-small {
+    margin-right: 15px;
+    font-size: 0.6em;
     font-style: italic;
-    font-size: 18px;
 }
-header>span {
-    margin-top: 48px;
-    margin-right: 20px;
-    float: right;
-    font-size: 12px;
+.help-line {
+    margin: 0px 50px 0 0;
 }
 
 /*Navigation*/
