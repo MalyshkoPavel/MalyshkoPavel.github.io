@@ -43,6 +43,7 @@ header {
     background-color: #353a33;
     color: white;
     line-height: 110px;
+    
 }
 .logo {
     display: table; 
@@ -71,7 +72,13 @@ header {
     font-style: italic;
 }
 .help-line {
-    margin: 0px 50px 0 0;
+    width: calc(100% - 415px);
+    box-sizing: border-box;
+    padding: 0 50px 0 0;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    text-align: right;
+    background-color: gray;
 }
 
 /*Navigation*/
@@ -252,7 +259,7 @@ main > aside p {
     text-decoration: underline;
 }
 /*Some little animation:)*/ 
-@media all and (max-width: 810px){
+@media all and (max-width: 800px){
     main > img { top: 0;}
     main > aside {top: 450px;}
 }
