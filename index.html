@@ -4,11 +4,18 @@
     <meta charset="UTF-8">
     <title>Environmental.com</title>
     <link rel="stylesheet" href="css/style.css">
+    <script type="text/javascript">
+      $('.navigation li a').hover(function() {
+         $(this).addClass('active')
+      }, function() {
+         $(this).removeClass('active')
+      });
+    </script>
 </head>
 <body>
 
    <!--Header-->
-   <header>
+   <header class="header">
         <a href="#" class="logo left">
             <img src="img/flu.png" alt="logo'Flu'" class="logo-img left">
             <div class="logo-txt">
@@ -21,11 +28,11 @@
 
    <!--Navigation-->
    <nav>
-      <ul>
+      <ul class="navigation clearfix">
          <li><a href="#">About Us</a></li>
          <li><a href="#">Services</a></li>
          <li><a href="#">Products</a></li>
-         <li><a href="#">Solutions</a></li>
+         <li><a href="#" class="active">Solutions</a></li>
          <li><a href="#">Price List</a></li>
          <li><a href="#">Contacts</a></li>
          <li><a href="#">FAQ</a></li>
