@@ -130,25 +130,26 @@ body {
     opacity: 1;
 }
 
-/*Devis*/
-.devis {
-    background-color: #E39B67;
+/*Slogan*/
+.slogan {
+    margin: 0;
+    padding: 60px 50px;
+    background-color: #485147;
+    background: -moz-radial-gradient(27% 50%, circle closest-corner     
+, #717771 0%, #485147 100%);
+    background: -webkit-radial-gradient(27% 50%, circle closest-corner   
+, #717771 0%, #485147 100%);
+    background: -o-radial-gradient(27% 50%, circle closest-corner     
+, #717771 0%, #485147 100%);
+    background: -ms-radial-gradient(27% 50%, circle closest-corner   
+, #717771 0%, #485147 100%);
+    background: radial-gradient(27% 50%, circle closest-corner   
+, #717771 0%, #485147 100%);
+    color: white;
 }
-.devis h1 {
-    position: relative;
-    box-sizing: border-box;
-    height: 290px;
-    width: 600px;
-    padding-top: 40px;
-    padding-left: 50px;
-    
-    font-size: 42px;
-    overflow: auto;
-    z-index: 1;   
-}
-.devis h1 span:first-child {
-    position: absolute;
-    left: 30px;
+.slogan p {
+    width: 55%;
+    font-size: 3em;
 }
 
 /*Content*/
