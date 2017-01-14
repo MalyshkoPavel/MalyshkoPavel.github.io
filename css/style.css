@@ -41,7 +41,8 @@ body {
 
 /*Header*/
 .header {
-    padding: 20px 50px;
+    position: relative;
+    padding: 20px 10px 10px 50px;
     background-color: #353a33;
     color: white;
 }
@@ -49,7 +50,7 @@ body {
     position: relative;
     margin: 0 20px;
     padding-left: 55px;
-    font-size: 3em;
+    font-size: 2em;
     line-height: 0.8em;
     color: inherit;
     text-decoration: none;
@@ -67,14 +68,8 @@ body {
     font-size: 0.6em;
     font-style: italic;
 }
-
 .help-line {
-    height: 100%;
-    background-color: blue;
-    overflow: hidden;
-    text-align: right;
-    white-space: nowrap;
-    text-overflow: ellipsis;
+    margin: 5px;
 }
 
 /*Navigation*/   
