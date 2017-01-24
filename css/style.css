@@ -35,6 +35,7 @@ html, body {
     height: 100%;
 }
 body {
+    min-width: 460px;
     background-color: #eff1d8;
     font-family: "Century Gothic", sans-serif;
 }
@@ -96,8 +97,21 @@ body {
     font-size: 1.2em;
     font-weight: bold;
     text-align: center;
-    text-overflow: ellipsis;
     text-decoration: none;
+}
+.navigation li a:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 20px;
+    height: 100%;
+    background: -moz-linear-gradient(left, rgba(129, 184, 47, 0.5), # 100%);
+    background: -webkit-linear-gradient(left, rgba(129, 184, 47, 0.5), #81B82F 100%);
+    background: -o-linear-gradient(left, rgba(129, 184, 47, 0.5), #81B82F 100%);
+    background: -ms-linear-gradient(left, rgba(129, 184, 47, 0.5), #81B82F 100%);
+    background: linear-gradient(to right, rgba(129, 184, 47, 0.5), #81B82F 100%);
+
 }
 .navigation li a:hover {
     background-color: rgba(129, 184, 47, 0.8) ;
@@ -136,8 +150,11 @@ body {
 }
 .slogan-text {
     position: relative;
-    width: 55%;
+    width: 50%;
+    min-width: 400px;
     font-size: 3em;
+    z-index: 2;
+
 }
 .left-dqute {
     position: absolute;
@@ -147,19 +164,58 @@ body {
 /*Content*/
 .content {
     position: relative;
-    padding: 30px 20px 50px;
+    margin: 15px 10px 40px;
 }
-.main-block {
-    background-color: red;
-}
-.add-block {
-    background-color: blue;
-}
+
 /*style for box with shadow*/
 .shadow {
-    border-radius: 10px;
     box-shadow: 2px 2px 4px 1px #e2e5d0;
 }
+.box-style {
+    border-radius: 10px;
+}
+
+/*left side*/
+.main-block {
+    width: calc(100% - 300px);
+}
+.plant-on-heand {
+    margin: 0 0 10px 0;
+}
+
+/*right side*/
+.big-plant {
+    position: absolute;
+    top: -200px;
+    z-index: 1;
+}
+.add-block {
+    width: 240px;
+}
+
+.aside {
+    position: absolute;
+    overflow: hidden;
+    background-color: white;
+    bottom: 0;
+    z-index: 101;
+}
+
+.aside > h2 {
+    background-color: #81B82F;
+    color: white;
+    padding: 5px 15px;
+}
+.aside > p {
+    padding: 5px 15px 10px;
+    font-size: 0.8em; 
+    line-height: 3em;
+    text-decoration: underline;
+}
+
+
+
+
 /*Text style*/
 main section {
     margin-bottom: 20px;
@@ -253,11 +309,6 @@ main > aside p {
     color: #929492;
     text-decoration: underline;
 }
-/*Some little animation:)*/ 
-@media all and (max-width: 800px){
-    main > img { top: 0;}
-    main > aside {top: 450px;}
-}
 
 /*Footer*/
 .footer {
@@ -267,5 +318,3 @@ main > aside p {
     font-size: 12px;
     text-align: center;
 }
-
-
