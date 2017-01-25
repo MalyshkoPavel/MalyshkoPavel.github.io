@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <title>Environmental.com</title>
     <link rel="stylesheet" href="css/style.css">
+
+   <!-- script for active white triangles -->
     <script type="text/javascript">
       $('.navigation li a').hover(function() {
          $(this).addClass('active')
@@ -11,6 +13,7 @@
          $(this).removeClass('active')
       });
     </script>
+
 </head>
 <body>
 
@@ -41,12 +44,16 @@
        
    <!--Slogan-->
    <blockquote class="slogan">
-      <div class="slogan-text"><span class="left-dqute">&ldquo;</span>Suspendisse felis. Aenean pulvinar vulputate nunc. Pellentesque ultrices elit vitae justo.&rdquo;</div>
+      <div class="slogan-text">
+         <span class="left-dqute">&ldquo;</span>Suspendisse felis. Aenean pulvinar vulputate nunc. Pellentesque ultrices elit vitae justo.&rdquo;
+      </div>
    </blockquote>
        
    <!--Content-->
    <main class="content clearfix">
-      <div class="main-block left">
+
+      <!-- Left side of main content -->
+      <div class="left-main-block left">
          <section class="first-section clearfix">
             <img src="img/plantOnHeand.png" alt="Цветочек на ладошке" class="plant-on-heand box-style shadow left">
             <h1>Pellentesque vestibulum erat.</h1>
@@ -60,37 +67,31 @@
             <h2>Nullam vitae leo vel pede sollicitudin suscipit</h2>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta amet magni blanditiis culpa nihil sed quas recusandae adipisci alias, deleniti beatae quidem ratione at aut nesciunt nulla fuga cum deserunt.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta amet magni blanditiis culpa nihil sed quas recusandae adipisci alias, deleniti beatae quidem ratione at aut nesciunt nulla fuga cum deserunt.</p>
          </section>
-         <section class="simple-section">
-            <h2>Nullam vitae leo vel pede sollicitudin suscipit</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta amet magni blanditiis culpa nihil sed quas recusandae adipisci alias, deleniti beatae quidem ratione at aut nesciunt nulla fuga cum deserunt.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta amet magni blanditiis culpa nihil sed quas recusandae adipisci alias, deleniti beatae quidem ratione at aut nesciunt nulla fuga cum deserunt.</p>
-         </section>
-         <section class="simple-section odd">
-            <h2>Nullam vitae leo vel pede sollicitudin suscipit</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta amet magni blanditiis culpa nihil sed quas recusandae adipisci alias, deleniti beatae quidem ratione at aut nesciunt nulla fuga cum deserunt.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta amet magni blanditiis culpa nihil sed quas recusandae adipisci alias, deleniti beatae quidem ratione at aut nesciunt nulla fuga cum deserunt.</p>
-         </section>
-        
-         <!--Button with Posted text -->
-         <button class="content-bottom-button">read more</button>
-         <span>Posted : 11-2-2009 11:45am by : Matthew Doyle</span>
 
+         <!--Button with Posted text -->
+         <div class="bottom-button">
+            <button class="content-bottom-button">read more</button>
+            <span>Posted : 11-2-2009 11:45am by : Matthew Doyle</span>
+         </div>
       </div>
      
-      <!--Right side of main-->
-      <div class="add-block right"> 
+      <!--Right side of main content-->
+      <div class="right-add-block right"> 
          <img src="img/plant.png" alt="Plant" class="big-plant">
-         <div class="aside box-style shadow">
-            <h2>Maecenas suscipit </h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia reiciendis corporis saepe debitis tenetur. Obcaecati quae sit sunt praesentium nihil mollitia repudiandae aut, voluptas eos, quisquam eum? A, sed, fuga?</p>
+   
+         <div class="left-border-box">
+            <div class="aside box-style shadow">
+               <h2>Maecenas suscipit </h2>
+               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae placeat repudiandae eaque officiis nam provident cumque iusto reprehenderit consectetur, dicta ullam odio a sed quam mollitia, debitis culpa est voluptas.</p>
+            </div>
          </div>
       </div>
    </main>  
        
-       <!--Footer-->
-       <footer class="footer">
-           Copyright &copy; 2009 Environmental.com. All Rights Reserved
-       </footer>
-                            
-    </div>
-    
+   <!--Footer-->
+   <footer class="footer">
+      Copyright &copy; 2009 Environmental.com. All Rights Reserved
+   </footer>
+                             
 </body>
 </html>

@@ -137,22 +137,22 @@ body {
     padding: 60px 50px;
     background-color: #485147;
     background: -moz-radial-gradient(27% 50%, circle closest-corner     
-, #717771 0%, #485147 100%);
+, #717771 0%, #292E28 100%);
     background: -webkit-radial-gradient(27% 50%, circle closest-corner   
-, #717771 0%, #485147 100%);
+, #717771 0%, #292E28 100%);
     background: -o-radial-gradient(27% 50%, circle closest-corner     
-, #717771 0%, #485147 100%);
+, #717771 0%, #292E28 100%);
     background: -ms-radial-gradient(27% 50%, circle closest-corner   
-, #717771 0%, #485147 100%);
+, #717771 0%, #292E28 100%);
     background: radial-gradient(27% 50%, circle closest-corner   
-, #717771 0%, #485147 100%);
+, #717771 0%, #292E28 100%);
     color: white;
 }
 .slogan-text {
     position: relative;
-    width: 50%;
+    width: 60%;
     min-width: 400px;
-    font-size: 3em;
+    font-size: 4em;
     z-index: 2;
 
 }
@@ -164,7 +164,7 @@ body {
 /*Content*/
 .content {
     position: relative;
-    margin: 15px 20px 40px;
+    padding: 20px 10px;
 }
 
 /*style for box with shadow*/
@@ -176,9 +176,10 @@ body {
 }
 
 /*left side*/
-.main-block {
-    width: calc(100% - 280px);
-    font-size: 0.8em
+.left-main-block {
+    width: calc(100% - 330px);
+    padding: 0 10px 0 0;
+    font-size: 0.8em;
 }
 
 .plant-on-heand {
@@ -189,7 +190,7 @@ body {
 
 .first-section > h1 {
     margin: 0 0 10px 0;
-    font-size: 1.5em;
+    font-size: 1.6em;
     color: #A2A693;
 }
 .first-section > p {
@@ -197,12 +198,12 @@ body {
 }
 
 .simple-section > h2 {
-    margin: 8px 0;
-    font-size: 1.25em;
-    color: #868B7B;
+    margin: 15px 0;
+    font-size: 1.3em;
+    color: #4E5148;
 }
 .odd > h2 {
-    color: #9BAC5D;
+    color: #6C793E;
 }
 .simple-section > p {
     color: #818768;
@@ -211,23 +212,52 @@ body {
     color: #C2C6AE;
 }
 
+/*Button in the bottom of content*/
+.bottom-button {
+    margin: 20px 0 0 0;
+    line-height: 2em;
+}
+.content-bottom-button {
+    width: 110px;
+    height: 28px;
+    margin: 0 0 5px 0;
+    color: white;
+    background: -moz-linear-gradient(top, #88ac50, #7cc116);
+    background: -ms-linear-gradient(top, #88ac50, #7cc116);
+    background: -o-linear-gradient(top, #88ac50, #7cc116);
+    background: -webkit-linear-gradient(top, #88ac50, #7cc116);
+    border-radius: 14px;
+    border: 1px solid #959a87;
+    color: white;
+    cursor: pointer;
+}
+.content-bottom-button, .content-bottom-button:active, .content-bottom-button:focus {
+    outline: none;
+}
+
 
 /*right side*/
+.right-add-block {
+    width: 320px;
+    position: relative;
+}
+
 .big-plant {
     position: absolute;
-    top: -200px;
-    transition: top 0.3s ease;
-    z-index: 1;
+    top: -220px;
+    right: 0;
 }
-.add-block {
-    width: 240px;
+
+.left-border-box {
+    position: absolute;
+    top: 140px;
+    border-left: 1px solid #d9d9d9;
+    padding: 0 0 0 20px;
 }
 .aside {
-    position: absolute;
+    
     overflow: hidden;
     background-color: white;
-    bottom: 0;
-    z-index: 101;
 }
 .aside > h2 {
     background-color: #81B82F;
@@ -241,26 +271,6 @@ body {
     text-decoration: underline;
 }
 
-/*Button in the bottom of content*/
-.content-bottom-button {
-    margin: 20px 20px 10px 0;
-    width: 110px;
-    height: 28px;
-    color: white;
-    background: -moz-linear-gradient(top, #88ac50, #7cc116);
-    background: -ms-linear-gradient(top, #88ac50, #7cc116);
-    background: -o-linear-gradient(top, #88ac50, #7cc116);
-    background: -webkit-linear-gradient(top, #88ac50, #7cc116);
-    border-radius: 14px;
-    border: 1px solid #959a87;
-    color: white;
-    cursor: pointer;
-}
-
-
-.content-bottom-button, .content-bottom-button:active, .content-bottom-button:focus {
-    outline: none;
-}
 
 /*Footer*/
 .footer {
