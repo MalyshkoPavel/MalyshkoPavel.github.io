@@ -4,41 +4,53 @@
 	<meta charset="UTF-8">
 	<title>2</title>
 	<link rel="stylesheet" type="text/css" href="files/styles/style.css">
+	<script type="text/javascript">
+      $('.navigation li a').hover(function() {
+         $(this).addClass('active')
+      }, function() {
+         $(this).removeClass('active')
+      });
+    </script>
 </head>
 <body>
-	<header>
-		<div class="logo"></div>
-		<nav class="navigation">
+	<header class="header clearfix">
+		<nav class="navigation right">
 			<ul>
-				<li><a href="#">home</a></li>
+				<li><a href="#" class="active">home</a></li>
 				<li><a href="#">portfolio</a></li>
 				<li><a href="#">webhosting</a></li>
 				<li><a href="#">about</a></li>
 			</ul>
 		</nav>
-		<div class="projects">
-			<div class="laptop">
-				<img src="files/img/laptop.png" alt="laptop" class="laptop-img">
-				<img src="files/img/last_project.png" alt="corner-tape" class="corner-tape">
+		<a href="#" class="logo left">
+			<img src="files/img/logo.png" alt="logo" class="logo-img"></img>
+			<div class="logo-brush">
+				<img src="files/img/brush.png" alt="brush"></img>
 			</div>
-			<div class="webdesign">
-				<h2>WebDesign</h2>
-				<div class="projec-block">
-					<div class="project-img"></div>
-					<hr>
-					<a href="#" class="project-button"></a>
-				</div>
-			</div>
-			<div class="webcoding">
-				<h2>WebCoding</h2>
-				<div class="projec-block">
-					<div class="project-img"></div>
-					<hr>
-					<a href="#" class="project-button"></a>
-				</div>
+		</a>
+	</header>
+	<div class="projects">
+		<div class="laptop">
+			<img src="files/img/laptop.png" alt="laptop" class="laptop-img">
+			<img src="files/img/last_project.png" alt="corner-tape" class="corner-tape">
+		</div>
+		<div class="webdesign">
+			<h2>WebDesign</h2>
+			<div class="projec-block">
+				<div class="project-img"></div>
+				<hr>
+				<a href="#" class="project-button"></a>
 			</div>
 		</div>
-	</header>
+		<div class="webcoding">
+			<h2>WebCoding</h2>
+			<div class="projec-block">
+				<div class="project-img"></div>
+				<hr>
+				<a href="#" class="project-button"></a>
+			</div>
+		</div>
+	</div>
 	<main class="layout">
 		<div class="col1">
 			<h2><span class="orange">WebDesign</span> and <span class="orange">WebCoding</span></h2>
