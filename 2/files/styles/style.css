@@ -22,22 +22,7 @@ body {
 	position: relative;
 	max-width: 960px;
 	margin: 0 auto;
-}
-
-/*Logo*/
-.logo {
-	margin: 10px 0;
-	padding: 10px;
-	border-radius: 15px;
-}
-.logo:hover {
-	box-shadow: inset 0 0 30px white;
-}
-.logo-brush {
-	position: absolute;
-	top: 0;
-	left: -75px;
-	opacity: 0.4;
+	z-index: 1;
 }
 
 /*Navigation*/
@@ -67,5 +52,59 @@ body {
 .active {
 	background-color: #FC8F0F;
 }
+
+/*Logo*/
+.logo {
+	margin: 10px 0;
+	padding: 10px;
+	border-radius: 15px;
+}
+.logo:hover {
+	box-shadow: inset 0 0 30px white;
+}
+.logo-brush {
+	position: absolute;
+	top: 0;
+	left: -75px;
+	width: 446px;
+	height: 305px;
+	background-image: url(../img/brush.png);
+	opacity: 0.4;
+}
+
+
+/*Projects*/
+.projects {
+	position: relative;
+	width: 960px;
+	margin: 0 auto;
+}
+
+.laptop {
+	position: relative;
+	width: 605px;
+	margin: 0 auto;
+}
+.laptop-img {
+	position: relative;
+	z-index: 3;
+}
+.corner-tape {
+	position: absolute;
+	top: 0;
+	right: 66px;
+	z-index: 4;
+}
+.laptop-light {
+	position: absolute;
+	top: -180px;
+	left: calc(50% - 577px);
+	width: 1154px;
+	height: 619px;
+	background-image: url(../img/gradient.png);
+}
+
+
+
 
 
