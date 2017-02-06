@@ -170,9 +170,8 @@ body {
 	z-index: 4;
 }
 
-
  
-/*main*/
+/*main block*/
 .main {
 	background-color: white;
 	color: gray; 
@@ -182,6 +181,7 @@ body {
 	max-width: 960px;
 	font-size: 0.8em;
 }
+/*coloms*/
 .col1, .col2, .col3 {
 	position: relative;
 	width: 33.3%;
@@ -189,6 +189,7 @@ body {
 	box-sizing: border-box;
 	float: left;
 }
+/*heads of coloms*/
 .col1-head, .col2-head, .col3-head, .support  {
 	padding: 0 0 40px 0; 
 	position: relative;
@@ -208,15 +209,11 @@ body {
 .col2-head:after {background-position: 55px 0px} /*Подровнять картинки*/
 .col3-head:after {background-position: 0px 55px}
 
-.orange {
-	color: #E86522;
-}
+.orange {color: #E86522;}
 .orange-light {color: #F98204;}
-
-.col1 p {
-	padding: 0 20px 0 0;
-}
-
+/*colom 1*/
+.col1 p {padding: 0 20px 0 0;}
+/*colom2*/
 .col2 blockquote {
 	position: relative;
 	padding: 0  20px 0 35px;
@@ -232,7 +229,7 @@ body {
 	position: absolute;
 	left: -10px;
 }
-
+/*colom3*/
 .networks {
 	padding: 0 50px 0 0;
 	list-style: none;
@@ -245,7 +242,7 @@ body {
 	text-decoration: none;
 	color: gray;
 }
-.network-link:hover {color: #E86522;}
+.network-link:hover {color: #E86522;} /*Добавить смену значка*/
 .rrs:before, .twitter:before, .fasebook:before {
 	content: "";
 	position: absolute;
@@ -256,17 +253,28 @@ body {
 } 
 .twitter:before {background-position: 0 32px;}
 .fasebook:before {background-position: 0 16px;}
-
 .info {
 	display: inline-block;
 	float: right;
 	color: gray;
 }
- 
 
 
+/*footer*/
+.footer {
+	position: relative;
+	max-width: 960px;
+	margin: 0 auto;
+}
+.footer-text {
+	padding: 25px 0;
+	margin: 0 10px 0 0;
+}
+.footer-logo {
+	position: absolute;
+	top: calc(50% - 22px) ;
 
-
+}
 
 /*for small sizes*/
 @media all and (max-width: 767px) {
