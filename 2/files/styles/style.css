@@ -15,14 +15,8 @@ html, body, p, ol, ul, li, h1, h2, h3, h4, h5, h6, hr, blockquote {
 /*general*/
 body {
 	background-color: black;
-	background-image: 
-	url(../img/brush.png), /*Тень не закрепленна*/
-	-webkit-radial-gradient(center 30%, circle farthest-side, #aaa 0%, #888 10%, black 50%);
-	background-position: 10% 0, center;
-	background-repeat: no-repeat;
 	color: white;
 	height: 100%;
-	overflow-x: hidden;
 }
 
 
@@ -31,7 +25,6 @@ body {
 	position: relative;
 	max-width: 960px;
 	margin: 0 auto;
-	z-index: 1;
 }
 
 
@@ -76,8 +69,10 @@ body {
 
 /*Projects block*/
 .projects {
+	background: black url(../img/brush.png) 0 0 no-repeat;
+	/*-webkit-radial-gradient(center 30%, circle farthest-side, #aaa 0%, #888 10%, black 50%)*/
 	position: relative;
-	max-width: 960px;
+	max-width: 1200px;
 	margin: 0 auto 100px;
 }
 
@@ -143,6 +138,7 @@ body {
 
 /*Laptop*/
 .laptop {
+	display: none;
 	position: absolute;
 	top: 0;
 	left: calc(50% - 303px);
