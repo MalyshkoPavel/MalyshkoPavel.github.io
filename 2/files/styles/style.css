@@ -13,27 +13,27 @@ html, body, p, ol, ul, li, h1, h2, h3, h4, h5, h6, hr, blockquote {
 }
 /*general*/
 body {
+	background: -moz-radial-gradient(center 40%, circle contain, white, black) no-repeat;
+	background: -webkit-radial-gradient(center 40%, circle contain, white, black) no-repeat;
+	background: -o-radial-gradient(center 40%, circle contain, white, black) no-repeat;
+	background: -ms-radial-gradient(center 40%, circle contain, white, black) no-repeat;
+	background: radial-gradient(center 40%, circle contain, white, black) no-repeat;
 	background-color: black;
 	color: white;
 	height: 100%;
 }
 
-
-/*Header*/
-.header {
-	position: relative;
+.header, .projects, .footer {
 	max-width: 960px;
 	margin: 0 auto;
 }
 
-	/*Logo*/
-	.logo {
-		margin: 10px 0;
-		padding: 10px 15px;
-		border-radius: 15px;
-	}
-	.logo:before {
-		content: "1";
+/*Header*/
+.header {
+	position: relative;
+}
+.header:before {
+		content: "";
 		display: block;
 		position: absolute;
 		width: 446px;
@@ -41,10 +41,21 @@ body {
 		top: 0;
 		left: -80px;
 		background: url(../img/brush.png);
+}
+	/*Logo*/
+	.logo {
+		display: block;
+		position: relative;
+		width: 213px;
+		height: 113px;
+		margin: 15px 0;
+		padding: 10px 15px;
+		background: url(../img/logo.png) center no-repeat;
+		border-radius: 15px;
+		z-index: 1;
 	}
 	.logo:hover {
 		box-shadow: inset 0 0 30px white;
-		background-color: green;
 	}
 
 
@@ -82,8 +93,6 @@ body {
 /*Projects block*/
 .projects {
 	position: relative;
-	max-width: 1200px;
-	margin: 0 auto 100px;
 }
 
 /*side blocks*/
@@ -268,8 +277,6 @@ body {
 /*footer*/
 .footer {
 	position: relative;
-	max-width: 960px;
-	margin: 0 auto;
 }
 .footer-text {
 	padding: 25px 0;
