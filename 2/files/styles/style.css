@@ -41,6 +41,7 @@ body {
 		top: 0;
 		left: -80px;
 		background: url(../img/brush.png);
+		z-index: -5;
 }
 	/*Logo*/
 	.logo {
@@ -52,6 +53,7 @@ body {
 		padding: 10px 15px;
 		background: url(../img/logo.png) center no-repeat;
 		border-radius: 15px;
+		outline: none; 
 		z-index: 1;
 	}
 	.logo:hover {
@@ -59,26 +61,23 @@ body {
 	}
 
 
-/*Navigation*/
-.navigation {
-	white-space: nowrap;
-}
-.navigation ul {
-	list-style: none; 
-}
-.navigation li {
-	float: left;
-	margin-right: 10px;
-	text-align: center;
-	padding-top: 50px;  
-}
-.navigation a {
-	padding: 50px 15px 10px; 
-	border-radius: 0 0 10px 10px;
-	color: white;
-	font: bold 1.2em serif;
-	text-decoration: none;
-}
+	/*Navigation*/
+	.navigation {
+		list-style: none; 
+	}
+	.navigation li {
+		float: left;
+		margin-right: 10px;
+		text-align: center;
+		
+	}
+	.navigation a {
+		 
+		border-radius: 0 0 10px 10px;
+		color: white;
+		font: bold 1.2em serif;
+		text-decoration: none;
+	}
 .navigation a:hover {
 	background-color: #FC8F0F;
 	box-shadow: 0 0 10px white;
