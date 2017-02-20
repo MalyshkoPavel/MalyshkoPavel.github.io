@@ -90,7 +90,7 @@ body {
 /*Projects blocks*/
 .projects {
 	position: relative;
-	margin-bottom: 50px; 
+	margin-bottom: 105px; 
 }
 
 .webdesign, .webcoding {
@@ -182,21 +182,35 @@ body {
 
 /*main block*/
 .main {
-	background-color: white;
+	padding: 30px 0;
+	border-top: 5px solid black;
+	background-color: #eee;
 	color: gray; 
 }
-.layout {
-	margin: 0 auto;
+.table-layout {
+	display: table;
 	max-width: 960px;
-	font-size: 0.8em;
+	margin: 0 auto;
 }
-/*coloms*/
-.col1, .col2, .col3 {
+.layout {
+	display: table-row;
+	padding: 30px;
+}
+/*Coloms*/
+.col {
+	display: table-cell;
 	position: relative;
 	width: 33.3%;
-	padding: 20px 10px;
-	box-sizing: border-box;
-	float: left;
+}
+/*Borders*/
+.layout > .col:nth-child(n+2) {
+	border-left: 1px solid #ddd; 
+}
+.layout > .col:nth-child(n+2):before {
+	content: "";
+	position: absolute;
+	top: 0; right: 0; bottom: 0; left: 0;
+	border-left: 1px solid #fff;
 }
 /*heads of coloms*/
 .col1-head, .col2-head, .col3-head, .support  {
