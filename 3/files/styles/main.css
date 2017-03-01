@@ -20,9 +20,7 @@ html, body, ul {
 .header {
 	background: #191919;
 }
-.header > .layout {
-	padding: 0 0 10px;
-}
+
 
 /*Header > Logo*/
 .logo {
@@ -70,6 +68,7 @@ html, body, ul {
 .search-shell:after {
 	content: "";
 	display: block;
+	cursor: pointer;
 	float: right;
 	width: 35px;
 	height: 35px;
@@ -79,9 +78,42 @@ html, body, ul {
 
 
 /*Navigation*/
-.navigation {
-	background: #2FB59B
+.nav {
+	background: #2FB59B;
+	border-top: 1px solid #FCFFFA;
+	border-bottom: 1px solid black;
 }
+.nav > .layout {
+	padding: 0 20px;
+}
+
+.nav-list {
+	list-style: none;
+}
+.nav-list > li {
+	float: left;
+	margin: 7px 2px;
+}
+.nav-list a {
+	display: block;
+	box-sizing: border-box;
+	padding: 12px 22px;
+	text-decoration: none;
+	color: black;
+	font: bold 0.8em sans-serif;
+	border-radius: 5px;
+	border: 1px solid #2FB59B;
+}
+.nav-list a:hover {
+	background: #3FC5AB;
+	border: 1px solid white;
+	border-color: #5Fe5cB #0F957B #0F957B #5Fe5cB;
+	box-shadow: 1px 1px 1px #0d9379; 
+	color: white;
+}
+
+
+
 /*Slider*/
 .slider {
 	background: #53D1AF
@@ -93,8 +125,13 @@ html, body, ul {
 	background-color: #ECECEC;
 }
 
-@media screen and (max-width: 640px) {
+@media screen and (max-width: 720px) {
+	/*Search */
 	.search-shell {
 		position: static;
+		padding-bottom: 10px;
 	}
+}
+@media screen and (max-width: 720px) {	
+	
 }
