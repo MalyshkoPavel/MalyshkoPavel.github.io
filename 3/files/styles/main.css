@@ -16,17 +16,17 @@ html, body, ul {
 	margin: 0 auto;
 }
 
+
 /*Header*/
 .header {
 	background: #191919;
 }
 
-
 /*Header > Logo*/
 .logo {
 	display: inline-block;
-	padding: 20px 10px;
-	margin: 10px;
+	padding: 20px 5px;
+	margin: 10px 0;
 	border-radius: 10px;
 	text-decoration: none;
 }
@@ -45,6 +45,7 @@ html, body, ul {
 	letter-spacing: -1px;
 	color: #5A5A5A;
 }
+
 /*Header > Search*/
 .search-shell {
 	position: absolute;
@@ -74,7 +75,6 @@ html, body, ul {
 	height: 35px;
 	background: url(../img/linse.png) no-repeat 4px 4px ;
 }
-
 
 
 /*Navigation*/
@@ -113,11 +113,52 @@ html, body, ul {
 }
 
 
-
 /*Slider*/
-.slider {
-	background: #53D1AF
+.slider-block {
+	background: #53D1AF;
 }
+.slider{
+	min-height: 385px;
+	background: url(../img/slider-background.png) 250px 50% no-repeat;
+}
+
+/*Slider>Buttons*/
+.slider:before, .slider:after {
+	content: "";
+	position: absolute;
+	width: 30px;
+	height: 30px;
+	left: 15px;
+	top: calc(50% - 15px);
+	background: white;
+	border-radius: 50%;
+	z-index: 5;
+
+}
+.slider:after {
+	left: auto;
+	right: 15px;
+}
+
+/*Slider > imgs*/
+.slider-imgs {
+	width: 485px;
+	height: 400px;
+	position: absolute;
+	top: 30px;
+	left: 55px;
+	background: red;
+}
+
+/*Slider > Content*/
+.slider-content {
+	width: 355px;
+	margin: 30px 50px 0 0;
+	padding: 20px 0 0;
+	background: blue;
+}
+
+
 /*Main*/
 
 /*Footer*/
