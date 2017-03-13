@@ -1,4 +1,4 @@
-html, body, ul, h1 {
+html, body, ul, h1, h2 {
 	margin: 0;
 	padding: 0;
 	font-family: sans-serif;
@@ -14,6 +14,7 @@ html, body, ul, h1 {
 	position: relative;
 	max-width: 990px;
 	margin: 0 auto;
+	padding: 10px;
 }
 
 
@@ -26,7 +27,7 @@ html, body, ul, h1 {
 .logo {
 	display: inline-block;
 	padding: 20px 10px;
-	margin: 10px;
+	margin: 0 0 10px;
 	border-radius: 10px;
 	text-decoration: none;
 }
@@ -34,7 +35,9 @@ html, body, ul, h1 {
 	background-color: #313131; 
 	box-shadow: inset 0 0 10px #666;
 }
-
+.logo-text, .logo-addition	{
+	display: inline-block;
+}
 .logo-text {
 	font: bold 2em sans-serif;
 	letter-spacing: -2px;
@@ -44,6 +47,8 @@ html, body, ul, h1 {
 	white-space: nowrap;
 	letter-spacing: -1px;
 	color: #5A5A5A;
+	font-weight: normal;
+	font-size: 1em;
 }
 
 /*Header > Search*/
@@ -55,7 +60,6 @@ html, body, ul, h1 {
 	bottom: 0;
 	right: 0;
 	margin: auto 0;
-	padding: 0 10px 0 0;
 }
 .search {
 	height: 35px;
@@ -83,9 +87,7 @@ html, body, ul, h1 {
 	border-top: 1px solid #FCFFFA;
 	border-bottom: 1px solid black;
 }
-.nav > .layout {
-	padding: 0 10px;
-}
+
 
 .nav-list {
 	list-style: none;
@@ -120,15 +122,15 @@ html, body, ul, h1 {
 	border-bottom: 1px solid black;
 }
 .slider{
-	padding: 10px;
 	background: url(../img/slider-background.png) 250px 50% no-repeat;
 }
 
 /*Slider > Content*/
 .slider-content {
+	float: right;
 	color: white;
 	max-width: 350px;
-	margin: 0 auto;
+	margin: 0 50px 0 0;
 }
 .slider-content > ul {
 	margin: 30px 0;
@@ -167,17 +169,19 @@ html, body, ul, h1 {
 /*Slider>Buttons*/
 
 .btn {
+	position: absolute;
+	top: 50%;
 	margin: 10px 0;
 	width: 30px;
 	height: 30px;
 	border-radius: 50%;
 }
 #prew {
-	float: left;
+	left: 15px;
 	background: white url(../img/prew.png) no-repeat 10px 50%;
 }
 #next{
-	float: right;
+	right: 15px;
 	background: white url(../img/next.png) no-repeat 12px 50%;
 }
 
@@ -186,7 +190,7 @@ html, body, ul, h1 {
 	cursor: pointer;
 	position: relative;
 	max-width: 480px;
-	margin: 50px auto 0;
+	margin: 0 0 0 50px;
 }
 .first-img, .second-img {
 	display: block;
@@ -210,20 +214,75 @@ html, body, ul, h1 {
 	height: 320px;
 	z-index: 1;
 }
-.second-img:hover {z-index: 3;}
-
-
-
-
+.second-img:hover {
+	z-index: 3;
+}
 
 
 /*Main*/
+.content-block {
+	float: left;
+	width: 48%; 
+}
+.container .content-block:nth-child(even){
+	float: right;
+}
+.content-block header h2 {
+	padding: 10px;
+	border-bottom: 1px solid #DCDCDC; 
+}
+.description {
+	margin: 10px;
+	font-size: 0.9em;
+	color: #CCC;
+}
+/*Main > Services*/
+.services{
+	background-color: red;
+	font-size: 0.9em;
+}
+.services h3 {
+	margin: 0 0 3px; 
+}
+.services p {
+	margin: 3px 0; 
+}
+.services a {
+	box-sizing: border-box;
+	position: relative;
+	display: block;
+	background: blue;
+	text-decoration: none;
+	padding: 0 0 0 70px;
+	margin: 0 0 20px;
+}
+.services a:before {
+	content: "";
+	position: absolute;
+	width: 48px;
+	height: 48px;
+	background: url(../img/sprite.png);
+	left: 10px;
+}
+
 
 /*Footer*/
 .footer {
 	background-color: #ECECEC;
 }
 
+
+
+
+
+
+@media screen and (min-width: 420px) and (max-width: 720px){
+	.services a{
+		float: left;
+		width: 50%;
+		background-color: pink;
+	}
+}
 @media screen and (max-width: 720px) {
 	/*Search */
 	.search-shell {
@@ -234,28 +293,29 @@ html, body, ul, h1 {
 	.nav-list li {
 		float: none;
 	}
+	/*Content*/
+	.content-block {
+		float: none;
+		width: auto;
+		margin: 0 0 30px;
+	}
 }
 
-@media screen and (min-width: 960px) {
+@media screen and (max-width: 960px) {
 	.slider-imgs {
-		margin: 0 0 0 50px;
+		margin: 50px auto 0;
 	}
 	.btn {
-		position: absolute;
-		top: 50%;
+		position: static;
 	}
 	#prew {
-		left: 15px;
+		float: left;
 	}
 	#next {
-		right: 15px;
-	}
-
-
-	.slider-content {
 		float: right;
-		margin-right: 50px;
 	}
-	
-
+	.slider-content {
+		float: none;
+		margin: 0 auto;
+	}
 }
