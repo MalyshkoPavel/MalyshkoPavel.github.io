@@ -87,14 +87,15 @@ html, body, ul, h1, h2 {
 	border-top: 1px solid #FCFFFA;
 	border-bottom: 1px solid black;
 }
-
-
+.nav > .layout {
+	padding: 5px 0;
+}
 .nav-list {
 	list-style: none;
 }
 .nav-list li {
 	float: left;
-	margin: 7px 2px;
+	margin: 0 2px;
 }
 .nav-list a {
 	display: block;
@@ -223,35 +224,42 @@ html, body, ul, h1, h2 {
 .content-block {
 	float: left;
 	width: 48%; 
+	color: #6C6C6C;
+	font-size: 0.9em;
+	line-height: 20px;
 }
 .container .content-block:nth-child(even){
 	float: right;
 }
+.content-block header {
+	margin-bottom: 30px; 
+}
 .content-block header h2 {
+	color: black;
 	padding: 10px;
 	border-bottom: 1px solid #DCDCDC; 
 }
 .description {
-	margin: 10px;
 	font-size: 0.9em;
 	color: #CCC;
 }
-/*Main > Services*/
+
+/*content-block > services*/
 .services{
-	background-color: red;
 	font-size: 0.9em;
 }
 .services h3 {
-	margin: 0 0 3px; 
+	margin: 0 0 3px;
+	color: #B7B7B7; 
 }
 .services p {
 	margin: 3px 0; 
+	color: #CCC;
 }
 .services a {
 	box-sizing: border-box;
 	position: relative;
 	display: block;
-	background: blue;
 	text-decoration: none;
 	padding: 0 0 0 70px;
 	margin: 0 0 20px;
@@ -261,9 +269,44 @@ html, body, ul, h1, h2 {
 	position: absolute;
 	width: 48px;
 	height: 48px;
-	background: url(../img/sprite.png);
+	background: url(../img/sprite.png) no-repeat 1px 0px;
 	left: 10px;
 }
+.service2 > a:before {background-position: -46px 0;}
+.service3 > a:before {background-position: 0px -47px;}
+.service4 > a:before {background-position: -46px -48px;}
+
+/*content-block > news*/
+.news p {
+	margin-top: 0; 
+}
+.news .date {
+	font-weight: bold;
+}
+.news .more-news {
+	cursor: pointer;
+	background-color: #E0E0E0;
+	padding: 5px 10px;
+	color: #4D4D4D;
+	outline: none;
+	border: none;
+	border-radius: 5px;
+	box-shadow: 1px 1px 2px gray;
+}
+
+/*content-block > quotes*/
+.quotes {
+	background: url(../img/quotes.png) no-repeat 6px 62px;
+}
+.quotes article {
+	margin: 0 0 0 20px;
+}
+.quotes article cite{
+	display: block;
+	font-weight: bold;
+	font-style: normal;
+}
+
 
 
 /*Footer*/
@@ -276,11 +319,10 @@ html, body, ul, h1, h2 {
 
 
 
-@media screen and (min-width: 420px) and (max-width: 720px){
+@media screen and (min-width: 420px){
 	.services a{
 		float: left;
 		width: 50%;
-		background-color: pink;
 	}
 }
 @media screen and (max-width: 720px) {
