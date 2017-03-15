@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-	<meta charset="UTF-8">
+  <meta charset="utf-8">
 	<meta name="viewport" content="width=device-width; initial-scale=1.0">
 	<link rel="stylesheet" type="text/css" href="files/styles/main.css">
 	<title>Project 3</title>	
@@ -12,17 +12,17 @@
 	<header class="header">
 		<div class="layout clearfix">
 			<a href="#" class="logo">
-				<hgroup>
-					<h1 class="logo-text">Designprog.</h1>
-					<h2 class="logo-addition">premium design templates</h2>	
-				</hgroup>
+				<h1 class="logo-text">Designprog.</h1>
+				<h2 class="logo-addition">premium design templates</h2>	
 			</a>
 			<div class="search-shell">
 				<input type="text" placeholder="Search:" class="search">
 			</div>
 		</div>
 	</header>
-	<nav class="nav">
+
+	<!-- TODO: Определить поведение при небольшой ширине экрана -->
+	<nav class="nav"> 
 		<div class="layout clearfix">
 			<ul class="nav-list">
 				<li><a href="#">Home</a></li>
@@ -38,6 +38,7 @@
 	<div class="slider-block">
 		<div class="layout slider clearfix">
 
+		<!-- TODO: Реализовать смену картинок при нажатии кнопок prew/next -->
 			<div class="slider-content">
 				<h1>We createbeautiful websites and graphics for the web!</h1>
 				<ul>
@@ -48,14 +49,19 @@
 				<a href="#" class="request-button">Request a <span>FREE</span> Quote Today</a>
 			</div>
 
+			<!-- TODO: Определить положение кнопок при небольшой ширине экрана -->
 			<div class="btn" id="prew"></div>
 			<div class="btn" id="next"></div>
-		
+
+			<!-- 
+				TODO: Определить поведение "экранов" при нажатии кнопок prew/next, а также наведения курсора.
+				TODO: Реализовать овальные тени под "экранами".
+				TODO: "экраны" должны наезжать на блок main. 
+			-->
 			<div class="slider-imgs">
 				<a href="#" class="first-img"></a>
 				<a href="#" class="second-img"></a>
 			</div>
-				
 		</div>
 	</div>
 	<main class="main">
@@ -114,11 +120,11 @@
 						<h2>News &amp; Events</h2>
 					</header>
 					<article>
-						<time class="date">5th/April/2009</time>
+						<time datetime="2009-04-05" class="date">5th/April/2009</time>
 						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. In blanditiis quae cupiditate, earum illo necessitatibus?</p>
 					</article>
 					<article>
-						<time class="date">6th/April/2009</time>
+						<time datetime="2009-04-06" class="date">6th/April/2009</time>
 						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. In blanditiis quae cupiditate, earum illo necessitatibus?</p>
 					</article>
 					<button class="more-news">more news</button>
@@ -138,10 +144,8 @@
 	<footer class="footer">
 		<div class="layout clearfix">
 			<a href="#" class="logo left">
-				<hgroup>
-					<h1 class="logo-text">Designprog.</h1>
-					<h2 class="logo-addition">premium design templates</h2>	
-				</hgroup>
+				<h1 class="logo-text">Designprog.</h1>
+				<h2 class="logo-addition">premium design templates</h2>	
 			</a>
 			<div class="info right clearfix">
 				<p>&copy;Copyright 2009. Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
