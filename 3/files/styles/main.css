@@ -63,7 +63,6 @@ html, body, ul, h1, h2 {
 	margin: 0 0 0 10px;
 }
 
-
 /*Header > Search*/
 
 .search-shell {
@@ -94,6 +93,13 @@ html, body, ul, h1, h2 {
 	width: 35px;
 	height: 35px;
 	background: url(../img/linse.png) no-repeat 4px 4px ;
+}
+
+@media screen and (max-width: 720px) {	
+	.search-shell {
+		position: static;
+		padding-bottom: 10px;
+	}
 }
 
 
@@ -135,6 +141,77 @@ html, body, ul, h1, h2 {
 	border-color: #5Fe5cB #0F957B #0F957B #5Fe5cB;
 	box-shadow: 1px 1px 1px #0d9379; 
 	color: white;
+}
+
+.hidden-nav-ticker {
+	display: none;
+}
+
+@media screen and (max-width: 720px) {	
+	.nav .layout {
+		height: 50px;
+	}
+	.nav-btn {
+		display: block;
+		position: absolute;
+		width: 50px;
+		height: 50px;
+		padding: 10px;
+		box-sizing: border-box;
+		margin-left: 5px; 
+		border-radius: 5px;
+		background-color: #777;
+	}
+
+	.nav-btn span {
+	  display: block;
+	  height: 5px;
+	  background-color: #fff;
+	  margin: 7px 0 0;
+	  position: relative;
+	}
+
+	.nav-btn span.first {
+ 	 margin-top: 0;
+	}
+
+	.nav-list {
+		position: absolute;
+		background-color: rgba(47, 181, 155, .9);
+		left: 0px;
+		top: 62px;
+		left: -300px;
+		padding: 15px;
+		transition: left .2s;
+		z-index: 2;
+	}
+	
+	.nav-list li {
+		float: none;
+	}
+
+	.hidden-nav-ticker:checked ~ .nav-btn {
+ 		right: 5px; 
+	}
+
+	.hidden-nav-ticker:checked ~ .nav-btn span.first {
+  	-webkit-transform: rotate(45deg);
+  	top: 12px;
+	}
+
+	.hidden-nav-ticker:checked ~ .nav-btn span.second {
+  	opacity: 0;
+	}
+
+	.hidden-nav-ticker:checked ~ .nav-btn span.third {
+  	-webkit-transform: rotate(-45deg);
+  	bottom: 12px;
+	}
+
+	.hidden-nav-ticker:checked ~ .nav-list {
+ 		left: 0; 
+	}
+
 }
 
 
@@ -434,16 +511,10 @@ html, body, ul, h1, h2 {
 	}
 }
 
-@media screen and (max-width: 720px) {
+@media screen and (max-width: 720px) {	
 
-	.search-shell {
-		position: static;
-		padding-bottom: 10px;
-	}
 
-	.nav-list li {
-		float: none;
-	}
+
 
 	.content-block {
 		float: none;
