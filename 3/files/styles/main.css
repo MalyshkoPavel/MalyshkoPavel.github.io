@@ -161,6 +161,8 @@ html, body, ul, h1, h2 {
 		margin-left: 5px; 
 		border-radius: 5px;
 		background-color: #777;
+		left: 0;
+		transition: left 0.2s;
 	}
 
 	.nav-btn span {
@@ -178,10 +180,11 @@ html, body, ul, h1, h2 {
 	.nav-list {
 		position: absolute;
 		background-color: rgba(47, 181, 155, .9);
+		border-radius: 0 0 10px 0;
 		left: 0px;
 		top: 62px;
 		left: -300px;
-		padding: 15px;
+		padding: 10px;
 		transition: left .2s;
 		z-index: 2;
 	}
@@ -191,11 +194,12 @@ html, body, ul, h1, h2 {
 	}
 
 	.hidden-nav-ticker:checked ~ .nav-btn {
- 		right: 5px; 
+ 		left: calc(100% - 60px); 
 	}
 
 	.hidden-nav-ticker:checked ~ .nav-btn span.first {
   	-webkit-transform: rotate(45deg);
+  	-moz-transform: rotate(45deg);
   	top: 12px;
 	}
 
@@ -205,6 +209,7 @@ html, body, ul, h1, h2 {
 
 	.hidden-nav-ticker:checked ~ .nav-btn span.third {
   	-webkit-transform: rotate(-45deg);
+  	-moz-transform: rotate(45deg);
   	bottom: 12px;
 	}
 
@@ -223,7 +228,7 @@ html, body, ul, h1, h2 {
 	border-bottom: 1px solid black;
 }
 
-.slider{
+.slider {
 	background: url(../img/slider-background.png) 250px 50% no-repeat;
 }
 
@@ -258,16 +263,12 @@ html, body, ul, h1, h2 {
 	border-radius: 10px;
 	background: -webkit-linear-gradient(top, #F4A211 0%, #E56000 100%);
 	background: -moz-linear-gradient(top, #F4A211 0%, #E56000 100%);
-	background: -ms-linear-gradient(top, #F4A211 0%, #E56000 100%);
-	background: -o-linear-gradient(top, #F4A211 0%, #E56000 100%);
 	box-shadow: 1px 1px 2px black;
 }
 
 .request-button:active {
 	background: -webkit-linear-gradient(top, #E49201 0%, #F57010 100%);
 	background: -moz-linear-gradient(top, #E49201 0%, #F57010 100%);
-	background: -ms-linear-gradient(top, #E49201 0%, #F57010 100%);
-	background: -o-linear-gradient(top, #E49201 0%, #F57010 100%);
 }
 
 .request-button > span {font-weight: bold;}
