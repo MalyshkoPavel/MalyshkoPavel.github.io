@@ -9,6 +9,7 @@
 </head>
 
 <body>
+	<!-- TODO: Проработать внешний вид всех состояний всех ссылок -->
 	<header class="header">
 		<div class="layout clearfix">
 			<a href="#" class="logo">
@@ -41,11 +42,13 @@
 			</ul>
 		</div>
 	</nav>
+
 	<div class="slider-block">
 		<div class="layout slider clearfix">
 
-		<!-- TODO: Реализовать смену картинок при нажатии кнопок prew/next -->
-			<div class="slider-content">
+			<!-- TODO: Реализовать смену картинок и текста при нажатии кнопок prew/next -->
+			<!-- TODO: Добавить текстовых слайдов -->
+			<div class="slider-content window">
 				<h1>We createbeautiful websites and graphics for the web!</h1>
 				<ul>
 					<li>Lorem ipsum dolor sit amet, consectetur.	</li>
@@ -54,21 +57,23 @@
 				</ul>
 				<a href="#" class="request-button">Request a <span>FREE</span> Quote Today</a>
 			</div>
-
-			<div class="btn" id="prew"></div>
-			<div class="btn" id="next"></div>
+			
+			<div class="clearfix">
+				<div class="btn" id="prew"></div>
+				<div class="btn" id="next"></div>
+			</div>
 
 			<!-- 
-				TODO: Определить поведение "экранов" при нажатии кнопок prew/next, а также наведения курсора.
-				TODO: Реализовать овальные тени под "экранами".
-				TODO: "экраны" должны наезжать на блок main. 
+				TODO: "экран" должны наезжать на блок main. (при малой ширине) 
 			-->
-			<div class="slider-imgs">
-				<a href="#" class="first-img"></a>
-				<a href="#" class="second-img"></a>
+			<div class="slider-imgs window">
+				<div class="slide1"></div>
+				<div class="slide2"></div>
+				<div class="slide3"></div>
 			</div>
 		</div>
 	</div>
+
 	<main class="main">
 		<div class="layout">
 			<div class="container clearfix">
@@ -146,6 +151,7 @@
 			</div>
 		</div>
 	</main>
+
 	<footer class="footer">
 		<div class="layout clearfix">
 			<a href="#" class="logo left">

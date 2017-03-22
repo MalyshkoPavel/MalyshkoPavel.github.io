@@ -110,7 +110,7 @@ html, body, ul, h1, h2 {
 
 
 @media screen and (max-width: 720px) {	
-	.search-shell {
+	.searching {
 		position: static;
 		padding-bottom: 10px;
 	}
@@ -243,6 +243,7 @@ html, body, ul, h1, h2 {
 }
 
 .slider {
+	padding: 20px 5px 85px;
 	background: url(../img/slider-background.png) 250px 50% no-repeat;
 }
 
@@ -296,6 +297,7 @@ html, body, ul, h1, h2 {
 	width: 30px;
 	height: 30px;
 	border-radius: 50%;
+	cursor: pointer;
 }
 
 #prew {
@@ -310,47 +312,63 @@ html, body, ul, h1, h2 {
 
 /*Slider > imgs*/
 
+.window {
+	
+}
+
 .slider-imgs {
-	cursor: pointer;
-	position: relative;
-	max-width: 480px;
-	margin: 0 0 0 50px;
-}
-
-.first-img, .second-img {
-	display: block;
-	border-radius: 10px;
-	box-shadow: 0 0 10px black;
-}
-
-.first-img {
-	position: relative;
-	background: url(../img/corner.png) no-repeat 0 0,
-	url(../img/slide1-1.png);
-	width: 88%;
-	height: 410px;
-	z-index: 2;
-}
-
-.second-img {
 	position: absolute;
-	right: 0;
-	top: 50px;
-	background: url(../img/slide1-2.png);
-	width: 69%;
-	height: 320px;
-	z-index: 1;
+	overflow: hidden;
+	min-width: 310px;
+	width: 100%;
+	max-width: 485px;
+	height: 427px;
+	top: 20px;
+	left: 50px;
+	
 }
 
-.second-img:hover {
-	z-index: 3;
+.slide1,
+.slide2,
+.slide3 {
+	width: 100%;
+	height: 100%;
+}
+
+.slide1 {
+	display: none;
+	background: url(../img/slide1.png) no-repeat -5px -5px;
+}
+.slide2 {background: url(../img/slide2.png) no-repeat -5px -5px;}
+.slide3 {background: url(../img/slide3.png) no-repeat -5px -5px;}
+
+@media screen and (max-width: 960px) {
+	
+	.slider {
+		padding-bottom: 0;
+	}
+
+	.slider-content,
+	.slider-imgs {
+		float: none;
+		margin: 0 auto;
+	}
+	
+	.btn {
+		position: static;
+	}
+
+	.slider-imgs {
+		position: static;
+		border-radius: 5px;
+	}
 }
 
 
 /*Main*/
 
 .main {
-	padding: 0 0 60px 0;
+	padding: 85px 0 60px;
 }
 
 .content-block {
@@ -458,6 +476,13 @@ html, body, ul, h1, h2 {
 	font-style: normal;
 }
 
+@media screen and (max-width: 960px) {
+	
+	.main {
+		padding-top: 50px;
+	}
+}
+
 
 /*Footer*/
 
@@ -488,7 +513,7 @@ html, body, ul, h1, h2 {
 }
 
 .footer .logo:hover .logo-addition{
-	color: #CCAF85;
+	color: #BFA47D;
 }
 
 /*footer > info*/
@@ -545,13 +570,7 @@ html, body, ul, h1, h2 {
 
 @media screen and (max-width: 960px) {
 
-	.slider-imgs {
-		margin: 50px auto 0;
-	}
-
-	.btn {
-		position: static;
-	}
+	
 
 	#prew {
 		float: left;
@@ -561,8 +580,4 @@ html, body, ul, h1, h2 {
 		float: right;
 	}
 
-	.slider-content {
-		float: none;
-		margin: 0 auto;
-	}
 }
