@@ -157,17 +157,13 @@ html, body, ul, h1, h2 {
 	color: white;
 }
 
-.hidden-nav-ticker {
-	display: none;
-}
-
 @media screen and (max-width: 720px) {	
 	.nav .layout {
 		height: 50px;
 	}
 	.nav-btn {
 		display: block;
-		position: absolute;
+		position: relative;
 		width: 50px;
 		height: 50px;
 		padding: 10px;
@@ -193,11 +189,13 @@ html, body, ul, h1, h2 {
 
 	.nav-list {
 		position: absolute;
+		display: none;
 		background-color: rgba(47, 181, 155, .9);
 		border-radius: 0 0 10px 0;
+		width: 50%;
+		text-align: center;
 		left: 0px;
 		top: 62px;
-		left: -300px;
 		padding: 10px;
 		transition: left .2s;
 		z-index: 2;
@@ -230,7 +228,13 @@ html, body, ul, h1, h2 {
 	.hidden-nav-ticker:checked ~ .nav-list {
  		left: 0; 
 	}
+}
 
+@media screen and (min-width: 720px) {
+	
+	.nav-list {
+		display: block;
+	}
 }
 
 
@@ -336,7 +340,6 @@ html, body, ul, h1, h2 {
 }
 
 .slide1 {
-	display: none;
 	background: url(../img/slide1.png) no-repeat -5px -5px;
 }
 .slide2 {background: url(../img/slide2.png) no-repeat -5px -5px;}

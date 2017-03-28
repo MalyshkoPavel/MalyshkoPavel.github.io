@@ -5,7 +5,9 @@
   <meta charset="utf-8">
 	<meta name="viewport" content="width=device-width; initial-scale=1.0">
 	<link rel="stylesheet" type="text/css" href="files/styles/main.css">
-	<title>Project 3</title>	
+	<title>Project 3</title>
+	<script src="https://code.jquery.com/jquery-3.1.1.js"></script>
+	<script type="text/javascript" src="files/scripts/script.js"></script>	
 </head>
 
 <body>
@@ -25,13 +27,12 @@
 
 	<nav class="nav"> 
 		<div class="layout clearfix">
-			<input type="checkbox" name="nav-btn" id="nav-btn" class="hidden-nav-ticker">
-			<label for="nav-btn" class="nav-btn">
+			<div class="nav-btn" id="nav-btn">
 				<span class="first"></span>
 				<span class="second"></span>
 				<span class="third"></span>
-			</label>
-			<ul class="nav-list">
+			</div>
+			<ul class="nav-list" id="nav-list">
 				<li><a href="#">Home</a></li>
 				<li><a href="#">About us</a></li>
 				<li><a href="#">Services</a></li>
