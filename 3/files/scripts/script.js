@@ -1,5 +1,7 @@
 $(document).ready(function(){
-	
+
+	//Navigation
+
 	$("#nav-btn").click(function() {
 	  if ($("#nav-list").is(":hidden")) {
 	    $("#nav-list").slideDown();
@@ -16,4 +18,8 @@ $(document).ready(function(){
 	 	}
 	});
 
+	//Slider
+
+	
+	
 });
