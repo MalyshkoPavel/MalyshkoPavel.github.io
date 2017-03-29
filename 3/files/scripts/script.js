@@ -3,15 +3,12 @@ $(document).ready(function(){
 	//Navigation
 
 	$("#nav-btn").click(function() {
-	  if ($("#nav-list").is(":hidden")) {
-	    $("#nav-list").slideDown();
-	  } else {
-	    $("#nav-list").slideUp();
-	  }
+	  $("#nav-list").slideToggle(500);
+	  $("#nav-btn").toggleClass("nav-slide");
   });
 
 	$( window ).resize(function() {
-		if ($( window ).width() > "720") {
+		if ($( document ).width() > "720") {
 			$("#nav-list").css("display", "block");
 	 	}else{
 	 		$("#nav-list").css("display", "none");
