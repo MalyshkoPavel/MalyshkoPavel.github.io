@@ -283,6 +283,7 @@ html, body, ul, h1, h2 {
 	background: -webkit-linear-gradient(top, #F4A211 0%, #E56000 100%);
 	background: -moz-linear-gradient(top, #F4A211 0%, #E56000 100%);
 	box-shadow: 1px 1px 2px black;
+	transition: transform 0.5s;
 }
 
 .request-button:active {
@@ -310,6 +311,10 @@ html, body, ul, h1, h2 {
 	cursor: pointer;
 }
 
+.btn:hover {
+	box-shadow: 0 0 40px #eee;
+}
+
 #prew {
 	left: 15px;
 	background: white url(../img/prew.png) no-repeat 10px 50%;
@@ -322,10 +327,6 @@ html, body, ul, h1, h2 {
 
 /*Slider > imgs*/
 
-.window {
-	
-}
-
 .slider-imgs {
 	position: absolute;
 	overflow: hidden;
@@ -334,8 +335,7 @@ html, body, ul, h1, h2 {
 	max-width: 485px;
 	height: 427px;
 	top: 20px;
-	left: 50px;
-	
+	left: 50px;	
 }
 
 .slide1,
@@ -467,7 +467,7 @@ html, body, ul, h1, h2 {
 	font-weight: bold;
 }
 
-.news .more-news {
+.more-news {
 	cursor: pointer;
 	background-color: #E0E0E0;
 	padding: 5px 10px;
@@ -476,6 +476,12 @@ html, body, ul, h1, h2 {
 	border: none;
 	border-radius: 5px;
 	box-shadow: 1px 1px 2px gray;
+	transition: transform 0.5s;
+}
+
+.more-news:hover {
+	box-shadow: 0 0 10px lightgray;
+	transform: scale(1.1);
 }
 
 /*content-block > quotes*/
@@ -551,13 +557,18 @@ html, body, ul, h1, h2 {
 
 .urls a {
 	text-decoration: none;
-	color: #868686;
+	color: #FFA14C;
 	padding: 0 3px;
 	border-left: 1px solid #868686;
 }
 
 .urls a:first-child {
 	border-left: none;
+}
+
+.urls a:hover {
+	color: #1B007D;
+	border-bottom: 1px solid #1B007D;
 }
 
 .author {
@@ -586,8 +597,6 @@ html, body, ul, h1, h2 {
 }
 
 @media screen and (max-width: 960px) {
-
-	
 
 	#prew {
 		float: left;
