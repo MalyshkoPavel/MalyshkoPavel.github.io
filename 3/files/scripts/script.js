@@ -7,10 +7,11 @@ $(document).ready(function(){
 	  $("#nav-btn").toggleClass("nav-slide");
   });
 
-	$( window ).resize(function() {
-		if ($( document ).width() > "720") {
+	$(window).resize(function() {
+		if ($(window).width() > "715") {
 			$("#nav-list").css("display", "block");
 	 	}else{
+	 		$("#nav-btn").removeClass("nav-slide");
 	 		$("#nav-list").css("display", "none");
 	 	}
 	});

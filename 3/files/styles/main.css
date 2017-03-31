@@ -185,6 +185,7 @@ html, body, ul, h1, h2 {
 	  background-color: #fff;
 	  margin: 7px 0 0;
 	  position: relative;
+	  transition: transform 0.5s;
 	}
 
 	.nav-btn span.first {
@@ -209,29 +210,23 @@ html, body, ul, h1, h2 {
 		float: none;
 	}
 
-	.hidden-nav-ticker:checked ~ .nav-btn {
- 		left: calc(100% - 60px); 
-	}
-
-	.hidden-nav-ticker:checked ~ .nav-btn span.first {
+	
+	.nav-slide span.first {
   	-webkit-transform: rotate(45deg);
   	-moz-transform: rotate(45deg);
   	top: 12px;
 	}
 
-	.hidden-nav-ticker:checked ~ .nav-btn span.second {
+	.nav-slide span.second {
   	opacity: 0;
 	}
 
-	.hidden-nav-ticker:checked ~ .nav-btn span.third {
+	.nav-slide span.third {
   	-webkit-transform: rotate(-45deg);
   	-moz-transform: rotate(45deg);
   	bottom: 12px;
 	}
 
-	.hidden-nav-ticker:checked ~ .nav-list {
- 		left: 0; 
-	}
 }
 
 @media screen and (min-width: 720px) {
@@ -349,11 +344,11 @@ html, body, ul, h1, h2 {
 	height: 100%;
 }
 
-.slide1 {
+.slider-imgs .slide1 {
 	background: url(../img/slide1.png) no-repeat -5px -5px;
 }
-.slide2 {background: url(../img/slide2.png) no-repeat -5px -5px;}
-.slide3 {background: url(../img/slide3.png) no-repeat -5px -5px;}
+.slider-imgs .slide2 {background: url(../img/slide2.png) no-repeat -5px -5px;}
+.slider-imgs .slide3 {background: url(../img/slide3.png) no-repeat -5px -5px;}
 
 @media screen and (max-width: 960px) {
 	
