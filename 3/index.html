@@ -1,180 +1,204 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
+	<head>
   <meta charset="utf-8">
 	<meta name="viewport" content="width=device-width; initial-scale=1.0">
 	<link rel="stylesheet" type="text/css" href="files/styles/main.css">
 	<title>Project 3</title>
 	<script src="https://code.jquery.com/jquery-3.1.1.js"></script>
 	<script type="text/javascript" src="files/scripts/script.js"></script>	
-</head>
+	</head>
 
-<body>
+	<body>
 
-	<header class="header">
-		<div class="layout clearfix">
-			<a href="#" class="logo">
-				<h1 class="logo-text">Designprog.</h1>
-				<h2 class="logo-addition">premium design templates</h2>	
-			</a>
-			<form action="#" class="searching">
-				<input type="text" placeholder="Search:" class="search">
-				<input type="submit" name="search" value="" class="linse">
-			</form>
-		</div>
-	</header>
+		<header class="header">
+			<div class="layout clearfix">
 
-	<nav class="nav"> 
-		<div class="layout clearfix">
-			<div class="nav-btn" id="nav-btn">
-				<span class="first"></span>
-				<span class="second"></span>
-				<span class="third"></span>
+				<a href="#" class="logo left">
+					<h1 class="logo-text">Designprog.</h1>
+					<span class="logo-addition">premium design templates</span>
+				</a>
+
+				<form action="#" class="searching">
+					<input type="text" placeholder="Search:" class="search">
+					<input type="submit" name="search" value="" class="submit">
+				</form>
 			</div>
-			<ul class="nav-list" id="nav-list">
-				<li><a href="#">Home</a></li>
-				<li><a href="#">About us</a></li>
-				<li><a href="#">Services</a></li>
-				<li><a href="#">Blog</a></li>
-				<li><a href="#">Clients</a></li>
-				<li><a href="#">Portfolio</a></li>
-				<li><a href="#">Contact us</a></li>
-			</ul>
-		</div>
-	</nav>
+		</header>
 
-	<div class="slider-block">
-		<div class="layout slider clearfix">
+		<nav class="nav"> 
+			<div class="layout clearfix">
 
-			<!-- TODO: Реализовать смену картинок и текста при нажатии кнопок prew/next -->
-			<!-- TODO: Добавить текстовых слайдов -->
-			<div class="slider-content window">
-				<div class="slide1">
-					<h1>We createbeautiful websites and graphics for the web!</h1>
-					<ul>
-						<li>Lorem ipsum dolor sit amet, consectetur.	</li>
-						<li>Lorem ipsum dolor sit amet.</li>
-						<li>Lorem ipsum dolor sit amet, consectetur.</li>
-					</ul>
-					<a href="#" class="request-button">Request a <span>FREE</span> Quote Today</a>
+				<div class="nav-btn">
+					<span class="first"></span>
+					<span class="second"></span>
+					<span class="third"></span>
 				</div>
-				<div class="slide2">
-					
-				</div>
-				<div class="slide3"></div>
+
+				<ul class="nav-list">
+					<li><a href="#">Home</a></li>
+					<li><a href="#">About us</a></li>
+					<li><a href="#">Services</a></li>
+					<li><a href="#">Blog</a></li>
+					<li><a href="#">Clients</a></li>
+					<li><a href="#">Portfolio</a></li>
+					<li><a href="#">Contact us</a></li>
+				</ul>
+			</div>
+		</nav>
+
+		<div class="slider-block">
+			<div class="layout slider clearfix">
 				
-			</div>
-			
-			<div class="clearfix">
 				<div class="btn" id="prew"></div>
+
+				<div class="slider-imgs window">
+					<div class="slide1"></div>
+					<div class="slide2"></div>
+					<div class="slide3"></div>
+				</div>
+
+				<div class="slider-content window">
+					<div class="slide1">
+						<h1>We createbeautiful websites and graphics for the web!</h1>
+						<ul>
+							<li>Lorem ipsum dolor sit amet, consectetur.	</li>
+							<li>Lorem ipsum dolor sit amet.</li>
+							<li>Lorem ipsum dolor sit amet, consectetur.</li>
+						</ul>
+						<a href="#" class="request-button">Request a <span>FREE</span> Quote Today</a>
+					</div>
+					<div class="slide2">
+						<h1>We createbeautiful websites and graphics for the web!</h1>
+						<ul>
+							<li>Lorem ipsum dolor sit amet, consectetur.	</li>
+							<li>Lorem ipsum dolor sit amet.</li>
+							<li>Lorem ipsum dolor sit amet, consectetur.</li>
+						</ul>
+						<a href="#" class="request-button">Request a <span>FREE</span> Quote Today</a>
+					</div>
+					<div class="slide3">
+						<h1>We createbeautiful websites and graphics for the web!</h1>
+						<ul>
+							<li>Lorem ipsum dolor sit amet, consectetur.	</li>
+							<li>Lorem ipsum dolor sit amet.</li>
+							<li>Lorem ipsum dolor sit amet, consectetur.</li>
+						</ul>
+						<a href="#" class="request-button">Request a <span>FREE</span> Quote Today</a>
+					</div>
+				</div>
+
 				<div class="btn" id="next"></div>
 			</div>
-
-			<div class="slider-imgs window">
-				<div class="slide1"></div>
-				<div class="slide2"></div>
-				<div class="slide3"></div>
-			</div>
 		</div>
-	</div>
 
-	<main class="main">
-		<div class="layout">
-			<div class="container clearfix">
-				<section class="content-block">
+		<main class="main">
+			<div class="layout">
+
+				<section class="content-block services">
 					<header>
 						<h2>Featured Services</h2>
 						<p class="description">Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
 					</header>
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem nulla quo assumenda in sapiente, nobis quibusdam illum, impedit! Fuga commodi eum aspernatur dignissimos ratione ut.</p>
+
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem nulla quo assumenda in sapiente, nobis quibusdam illum, impedit! Fuga commodi eum aspernatur dignissimos ratione ut.</p>.
+
 					<nav class="services">
-						<div class="container clearfix">
-							<section class="service1">
+						<section class="service1">
+							<a href="#">
+								<h3>Featured Service</h3>
+								<p>	Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+							</a>
+						</section>
+
+						<section class="service2">
 								<a href="#">
 									<h3>Featured Service</h3>
 									<p>	Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
 								</a>
-							</section>
-							<section class="service2">
-								<a href="#">
-									<h3>Featured Service</h3>
-									<p>	Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-								</a>
-							</section>
-						</div>
-						<div class="container clearfix">
-							<section class="service3">
-								<a href="#">
-									<h3>Featured Service</h3>
-									<p>	Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-								</a>
-							</section>
-							<section class="service4">
-								<a href="#">
-									<h3>Featured Service</h3>
-									<p>	Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-								</a>
-							</section>
-						</div>
+						</section>
+				
+						<section class="service3">
+							<a href="#">
+								<h3>Featured Service</h3>
+								<p>	Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+							</a>
+						</section>
+				
+						<section class="service4">
+							<a href="#">
+								<h3>Featured Service</h3>
+								<p>	Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+							</a>
+						</section>
 					</nav>
 				</section>
-				<section class="content-block">
+
+				<section class="content-block what-we-do">
 					<header>
 						<h2>What We Do</h2>
 						<p class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda laboriosam eius expedita modi dolor harum. Eos debitis in velit. Inventore.</p>
 					</header>
-					<p><strong>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit, suscipit. Vero porro quaerat illo deserunt explicabo.</strong><br>
-					Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque placeat earum obcaecati perferendis porro officia culpa cupiditate possimus illo, velit!</p>
+
+					<p class="strong">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit, suscipit. Vero porro quaerat illo deserunt explicabo.</p>
+
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque placeat earum obcaecati perferendis porro officia culpa cupiditate possimus illo, velit!</p>
+
 					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis accusamus, odio non perferendis libero sed voluptate nobis tempore expedita cupiditate!</p>
 				</section>
-			</div>
-			<div class="container clearfix">
+
 				<section class="content-block news">
 					<header>
 						<h2>News &amp; Events</h2>
 					</header>
+
 					<article>
 						<time datetime="2009-04-05" class="date">5th/April/2009</time>
 						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. In blanditiis quae cupiditate, earum illo necessitatibus?</p>
 					</article>
+
 					<article>
 						<time datetime="2009-04-06" class="date">6th/April/2009</time>
 						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. In blanditiis quae cupiditate, earum illo necessitatibus?</p>
 					</article>
+
 					<button class="more-news">more news</button>
 				</section>
+
 				<section class="content-block quotes">
 					<header>
 						<h2>What my clients are saying</h2>
 					</header>
+
 					<article>
 						<q>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque natus nostrum, ullam, fugiat consectetur similique ratione eveniet consequuntur molestiae. Illo!</q>
 						<cite>-John Smith, webdesigner</cite>
 					</article>
 				</section>
 			</div>
-		</div>
-	</main>
+		</main>
 
-	<footer class="footer">
-		<div class="layout clearfix">
-			<a href="#" class="logo left">
-				<h1 class="logo-text">Designprog.</h1>
-				<h2 class="logo-addition">premium design templates</h2>	
-			</a>
-			<div class="info right clearfix">
-				<p>&copy;Copyright 2009. Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-				<ul class="urls left">
-					<li>
-						<a href="#">Home</a>
-						<a href="#">Contacts</a>
-						<a href="#">RSS</a>
-					</li>
-				</ul>
-				<cite class="author right">Design by DreamTeamplate</cite>
+		<footer class="footer">
+			<div class="layout clearfix">
+
+				<a href="#" class="logo">
+					<h1 class="logo-text">Designprog.</h1>
+					<span class="logo-addition">premium design templates</span>	
+				</a>
+
+				<div class="info clearfix">
+					<p>&copy;Copyright 2009. Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+					<ul class="urls left">
+						<li>
+							<a href="#">Home</a>
+							<a href="#">Contacts</a>
+							<a href="#">RSS</a>
+						</li>
+					</ul>
+					<cite class="author right">Design by DreamTeamplate</cite>
+				</div>
 			</div>
-		</div>
-	</footer>
-</body>
+		</footer>
+
+	</body>
 </html>

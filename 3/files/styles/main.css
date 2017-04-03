@@ -1,12 +1,8 @@
-html, body, ul, h1, h2 {
+html, body, ul, h1, h2, a {
 	margin: 0;
 	padding: 0;
 	font-family: sans-serif;
 }
-
-.left {float: left;}
-
-.right {float: right;}
 
 .clearfix:after {
 	content: "";
@@ -24,25 +20,16 @@ html, body, ul, h1, h2 {
 
 /*Header*/
 
-.header {
-	background: #191919;
-}
+.header {background: #191919;}
 
-/*Header > Logo*/
+	/*Header > Logo*/
 
 .logo {
-	display: inline-block;
+	display: block;
 	padding: 20px 10px;
 	margin: 0 0 10px;
 	border-radius: 10px;
 	text-decoration: none;
-}
-
-.logo:hover .logo-text{
-	color: #F0C07D;
-}
-.logo:hover .logo-addition {
-	color: #594C3A;
 }
 
 .logo-text, 
@@ -60,27 +47,25 @@ html, body, ul, h1, h2 {
 	white-space: nowrap;
 	letter-spacing: -1px;
 	color: #5A5A5A;
-	font-weight: normal;
-	font-size: 1em;
 	margin: 0 0 0 10px;
 }
 
-/*Header > Search*/
+.logo:hover .logo-text{
+	color: #F0C07D;
+}
+
+.logo:hover .logo-addition {
+	color: #594C3A;
+}
+
+	/*Header > Search*/
 
 .searching {
-	position: absolute;
-	text-align: right;
-	height: 35px;
-	top: 0;
-	bottom: 0;
-	right: 0;
-	margin: auto 0;
+	
 }
 
 .search {
 	height: 35px;
-	padding: 0 10px;
-	margin: 0 5px;
 	border: none;
 	border-radius: 5px;
 	background-color: #333;
@@ -88,32 +73,23 @@ html, body, ul, h1, h2 {
 	outline: none;
 }
 
-.linse {
+.submit {
 	border: none;
 	cursor: pointer;
 	outline: none;
-	float: right;
 	width: 35px;
 	height: 35px;
 	background: url(../img/linse.png) no-repeat 4px 4px;
 }
 
-.linse:hover {
+.submit:hover {
 	border: 1px solid;
 	border-color: gray #333 #333 gray;
 	border-radius: 5px;
 	background-color: #333;
 }
-.linse:active {
+.submit:active {
 	border-color: #333 gray gray #333;
-}
-
-
-@media screen and (max-width: 720px) {	
-	.searching {
-		position: static;
-		padding-bottom: 10px;
-	}
 }
 
 
