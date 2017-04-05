@@ -27,44 +27,39 @@ html, body, ul, h1, h2, a {
 .logo {
 	display: block;
 	padding: 20px 10px;
-	margin: 0 0 10px;
 	border-radius: 10px;
 	text-decoration: none;
+	background-color: red;
+	float: left;
+	line-height: 1.5em;
 }
 
 .logo-text, 
-.logo-addition	{
-	display: inline-block;
-}
+.logo-addition	{display: inline-block;}
 
 .logo-text {
 	font: bold 2em sans-serif;
 	letter-spacing: -2px;
-	color: #FFFFFF;
 }
+.logo .logo-text {color: #FFFFFF;}
+.logo:hover .logo-text{color: #F0C07D;}
 
 .logo-addition {
 	white-space: nowrap;
 	letter-spacing: -1px;
-	color: #5A5A5A;
 	margin: 0 0 0 10px;
 }
-
-.logo:hover .logo-text{
-	color: #F0C07D;
-}
-
-.logo:hover .logo-addition {
-	color: #594C3A;
-}
+.logo .logo-addition {color: #5A5A5A;}
+.logo:hover .logo-addition {color: #594C3A;}
 
 	/*Header > Search*/
 
 .searching {
-	
+	background-color: blue;
+	float: right;
 }
 
-.search {
+.search-field {
 	height: 35px;
 	border: none;
 	border-radius: 5px;
@@ -73,7 +68,7 @@ html, body, ul, h1, h2, a {
 	outline: none;
 }
 
-.submit {
+.search-submit {
 	border: none;
 	cursor: pointer;
 	outline: none;
@@ -82,13 +77,13 @@ html, body, ul, h1, h2, a {
 	background: url(../img/linse.png) no-repeat 4px 4px;
 }
 
-.submit:hover {
+.search-submit:hover {
 	border: 1px solid;
 	border-color: gray #333 #333 gray;
 	border-radius: 5px;
 	background-color: #333;
 }
-.submit:active {
+.search-submit:active {
 	border-color: #333 gray gray #333;
 }
 
@@ -215,13 +210,13 @@ html, body, ul, h1, h2, a {
 
 /*Slider*/
 
-.slider-block {
+.slider {
 	background: #53D1AF;
 	border-top: 1px solid #FCFFFA;
 	border-bottom: 1px solid black;
 }
 
-.slider {
+.slider .layout {
 	padding: 20px 5px 85px;
 	background: url(../img/slider-background.png) 250px 50% no-repeat;
 }

@@ -14,81 +14,92 @@
 		<header class="header">
 			<div class="layout clearfix">
 
-				<a href="#" class="logo left">
+				<a href="#" class="logo">
 					<h1 class="logo-text">Designprog.</h1>
 					<span class="logo-addition">premium design templates</span>
 				</a>
 
 				<form action="#" class="searching">
-					<input type="text" placeholder="Search:" class="search">
-					<input type="submit" name="search" value="" class="submit">
+					<input type="text" placeholder="Search:" class="search-field">
+					<input type="submit" name="search" value="" class="search-submit">
 				</form>
 			</div>
 		</header>
 
 		<nav class="nav"> 
-			<div class="layout clearfix">
+			<ul class="layout">
 
-				<div class="nav-btn">
+				<li class="navigation mobile-btn">
 					<span class="first"></span>
 					<span class="second"></span>
 					<span class="third"></span>
-				</div>
+				</li>
 
-				<ul class="nav-list">
-					<li><a href="#">Home</a></li>
-					<li><a href="#">About us</a></li>
-					<li><a href="#">Services</a></li>
-					<li><a href="#">Blog</a></li>
-					<li><a href="#">Clients</a></li>
-					<li><a href="#">Portfolio</a></li>
-					<li><a href="#">Contact us</a></li>
-				</ul>
-			</div>
+				<li class="navigation list">
+					<ul>
+						<li><a href="#">Home</a></li>
+						<li><a href="#">About us</a></li>
+						<li><a href="#">Services</a></li>
+						<li><a href="#">Blog</a></li>
+						<li><a href="#">Clients</a></li>
+						<li><a href="#">Portfolio</a></li>
+						<li><a href="#">Contact us</a></li>
+					</ul>
+				</li>
+			</ul>
 		</nav>
 
-		<div class="slider-block">
-			<div class="layout slider clearfix">
+		<div class="slider">
+			<div class="layout clearfix">
 				
-				<div class="btn" id="prew"></div>
+				<div class="btn prew" id="prew"></div>
+				
+				<ul class="slides-list">
+					<li class="first slide">
+						<img src="files/img/slide1.png" alt="project1" class="slide-img">
+						
+						<div class="slide-txt">
+							<h1>We createbeautiful websites and graphics for the web!</h1>
+							<ul>
+								<li>Lorem ipsum dolor sit amet, consectetur.	</li>
+								<li>Lorem ipsum dolor sit amet.</li>
+								<li>Lorem ipsum dolor sit amet, consectetur.</li>
+							</ul>
+							<a href="#" class="request-button">Request a <span>FREE</span> Quote Today</a>
+						</div>
+					</li>
 
-				<div class="slider-imgs window">
-					<div class="slide1"></div>
-					<div class="slide2"></div>
-					<div class="slide3"></div>
-				</div>
+					<li class="second slide">
+						<img src="files/img/slide2.png" alt="project2" class="slide-img">
+						
+						<div class="slide-txt">
+							<h1>We createbeautiful websites and graphics for the web!</h1>
+							<ul>
+								<li>Lorem ipsum dolor sit amet, consectetur.	</li>
+								<li>Lorem ipsum dolor sit amet.</li>
+								<li>Lorem ipsum dolor sit amet, consectetur.</li>
+							</ul>
+							<a href="#" class="request-button">Request a <span>FREE</span> Quote Today</a>
+						</div>
+					</li>
 
-				<div class="slider-content window">
-					<div class="slide1">
-						<h1>We createbeautiful websites and graphics for the web!</h1>
-						<ul>
-							<li>Lorem ipsum dolor sit amet, consectetur.	</li>
-							<li>Lorem ipsum dolor sit amet.</li>
-							<li>Lorem ipsum dolor sit amet, consectetur.</li>
-						</ul>
-						<a href="#" class="request-button">Request a <span>FREE</span> Quote Today</a>
-					</div>
-					<div class="slide2">
-						<h1>We createbeautiful websites and graphics for the web!</h1>
-						<ul>
-							<li>Lorem ipsum dolor sit amet, consectetur.	</li>
-							<li>Lorem ipsum dolor sit amet.</li>
-							<li>Lorem ipsum dolor sit amet, consectetur.</li>
-						</ul>
-						<a href="#" class="request-button">Request a <span>FREE</span> Quote Today</a>
-					</div>
-					<div class="slide3">
-						<h1>We createbeautiful websites and graphics for the web!</h1>
-						<ul>
-							<li>Lorem ipsum dolor sit amet, consectetur.	</li>
-							<li>Lorem ipsum dolor sit amet.</li>
-							<li>Lorem ipsum dolor sit amet, consectetur.</li>
-						</ul>
-						<a href="#" class="request-button">Request a <span>FREE</span> Quote Today</a>
-					</div>
-				</div>
+					<li class="third slide">
+						<img src="files/img/slide2.png" alt="project2" class="slide-img">
+						
+						<div class="slide-txt">
+							<h1>We createbeautiful websites and graphics for the web!</h1>
+							<ul>
+								<li>Lorem ipsum dolor sit amet, consectetur.	</li>
+								<li>Lorem ipsum dolor sit amet.</li>
+								<li>Lorem ipsum dolor sit amet, consectetur.</li>
+							</ul>
+							<a href="#" class="request-button">Request a <span>FREE</span> Quote Today</a>
+						</div>
+					</li>
 
-				<div class="btn" id="next"></div>
+				</ul>
+
+				<div class="btn next" id="next"></div>
 			</div>
 		</div>
 
@@ -186,16 +197,14 @@
 					<span class="logo-addition">premium design templates</span>	
 				</a>
 
-				<div class="info clearfix">
+				<div class="info">
 					<p>&copy;Copyright 2009. Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-					<ul class="urls left">
-						<li>
-							<a href="#">Home</a>
-							<a href="#">Contacts</a>
-							<a href="#">RSS</a>
-						</li>
+					<ul class="urls">
+						<li><a href="#">Home</a></li>
+						<li><a href="#">Contacts</a></li>
+						<li><a href="#">RSS</a></li>		
 					</ul>
-					<cite class="author right">Design by DreamTeamplate</cite>
+					<p class="author">Design by DreamTeamplate</p>
 				</div>
 			</div>
 		</footer>
