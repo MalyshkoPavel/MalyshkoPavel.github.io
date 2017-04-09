@@ -55,18 +55,21 @@ html, body, ul, h1, h2, a, input {
 	/*Header > Search*/
 
 .searching {
-	float: right;
-	height: 35px;
-	margin: auto 0;
 	position: absolute;
 	top: 0;
-	bottom: 0;
 	right: 0;
+	bottom: 0;
+	height: 35px;
+	margin: auto 0;
+}
+
+.search-field,
+.search-submit {
+	vertical-align: top;
 }
 
 .search-field {
 	height: 35px;
-	margin-right: 40px; 
 	border: none;
 	border-radius: 5px;
 	background-color: #333;
@@ -76,9 +79,6 @@ html, body, ul, h1, h2, a, input {
 }
 
 .search-submit {
-	position: absolute;
-	right: 0;
-	top: 0;
 	border: none;
 	cursor: pointer;
 	outline: none;
@@ -100,7 +100,7 @@ html, body, ul, h1, h2, a, input {
 @media screen and (max-width: 720px) {
 	.searching {
 		position: relative;
-		margin-top: 10px; 
+		text-align: right;
 	}
 }
 
