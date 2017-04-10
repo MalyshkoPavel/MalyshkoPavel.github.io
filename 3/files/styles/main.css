@@ -112,20 +112,17 @@ html, body, ul, h1, h2, a, input {
 	border-bottom: 1px solid black;
 }
 
-.nav > .layout {
-	padding: 5px 0;
-}
-
-.nav-list {
+.nav .layout, 
+.list {
 	list-style: none;
 }
 
-.nav-list li {
+.list li {
 	float: left;
 	margin: 0 2px;
 }
 
-.nav-list a {
+.list a {
 	display: block;
 	box-sizing: border-box;
 	padding: 12px 22px;
@@ -136,7 +133,7 @@ html, body, ul, h1, h2, a, input {
 	border: 1px solid #2FB59B;
 }
 
-.nav-list a:hover {
+.list a:hover {
 	background: #3FC5AB;
 	border: 1px solid white;
 	border-color: #5Fe5cB #0F957B #0F957B #5Fe5cB;
@@ -145,10 +142,8 @@ html, body, ul, h1, h2, a, input {
 }
 
 @media screen and (max-width: 720px) {	
-	.nav .layout {
-		height: 50px;
-	}
-	.nav-btn {
+
+	.mobile-btn {
 		display: block;
 		position: relative;
 		width: 50px;
@@ -162,11 +157,7 @@ html, body, ul, h1, h2, a, input {
 		transition: left 0.5s;
 	}
 
-	.nav-slide {
-		left: calc(100% - 60px);
-	}
-
-	.nav-btn span {
+	.mobile-btn span {
 	  display: block;
 	  height: 5px;
 	  background-color: #fff;
@@ -175,40 +166,51 @@ html, body, ul, h1, h2, a, input {
 	  transition: transform 0.5s;
 	}
 
-	.nav-btn span.first {
+	.mobile-btn span.first {
  	 margin-top: 0;
 	}
 
-	.nav-list {
+	.list {
 		position: absolute;
-		display: none;
-		background-color: rgba(47, 181, 155, .9);
+		background: #2FB59B;
 		border-radius: 0 0 10px 0;
+		border-right: 1px solid gray;
+		border-bottom: 1px solid gray;
 		width: 50%;
 		text-align: center;
-		left: 0px;
-		top: 62px;
+		left: -360px;
+		top: 72px;
 		padding: 10px;
-		transition: left .2s;
 		z-index: 2;
+		transition: left 0.5s;
 	}
 	
-	.nav-list li {
+	.list li {
 		float: none;
+		margin-top: 5px;
+	}
+	.list li:first-child {
+		margin-top: 0;
 	}
 
-	
-	.nav-slide span.first {
+	.mobile-btn-slide {
+		left: calc(100% - 60px);
+	}
+	.mobile-list-slide {
+		left: 0;
+	}
+
+	.mobile-btn-slide span.first {
   	-webkit-transform: rotate(45deg);
   	-moz-transform: rotate(45deg);
   	top: 12px;
 	}
 
-	.nav-slide span.second {
+	.mobile-btn-slide span.second {
   	opacity: 0;
 	}
 
-	.nav-slide span.third {
+	.mobile-btn-slide span.third {
   	-webkit-transform: rotate(-45deg);
   	-moz-transform: rotate(45deg);
   	bottom: 12px;
@@ -216,12 +218,6 @@ html, body, ul, h1, h2, a, input {
 
 }
 
-@media screen and (min-width: 720px) {
-	
-	.nav-list {
-		display: block;
-	}
-}
 
 
 /*Slider*/
