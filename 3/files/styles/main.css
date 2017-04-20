@@ -57,7 +57,7 @@ html, body, ul, h1, h2, a, input {
 .searching {
 	position: absolute;
 	top: 0;
-	right: 0;
+	right: 15px;
 	bottom: 0;
 	height: 35px;
 	margin: auto 0;
@@ -70,6 +70,7 @@ html, body, ul, h1, h2, a, input {
 
 .search-field {
 	height: 35px;
+	width: 200px;
 	border: none;
 	border-radius: 5px;
 	background-color: #333;
@@ -178,7 +179,7 @@ html, body, ul, h1, h2, a, input {
 		border-bottom: 1px solid gray;
 		width: 50%;
 		text-align: center;
-		left: -360px;
+		left: -500px;
 		top: 72px;
 		padding: 10px;
 		z-index: 2;
@@ -215,9 +216,7 @@ html, body, ul, h1, h2, a, input {
   	-moz-transform: rotate(45deg);
   	bottom: 12px;
 	}
-
 }
-
 
 
 /*Slider*/
@@ -227,34 +226,96 @@ html, body, ul, h1, h2, a, input {
 	border-top: 1px solid #FCFFFA;
 	border-bottom: 1px solid black;
 }
-
 .slider .layout {
-	padding: 20px 5px 85px;
-	background: url(../img/slider-background.png) 250px 50% no-repeat;
+	padding: 0 10px 45px 10px;
+}
+
+
+/*Slider>Buttons*/
+
+.btn {
+	position: absolute;
+	top: 50%;
+	width: 30px;
+	height: 30px;
+	border-radius: 50%;
+	cursor: pointer;
+	z-index: 3;
+
+}
+
+.btn:hover {
+	box-shadow: 0 0 40px #eee;
+}
+
+#prew {
+	left: 15px;
+	background: white url(../img/prew.png) no-repeat 10px 50%;
+}
+
+#next{
+	right: 15px;
+	background: white url(../img/next.png) no-repeat 12px 50%;
 }
 
 /*Slider > Content*/
 
-.slider-content {
-	float: right;
-	color: white;
-	max-width: 350px;
-	margin: 0 50px 0 0;
+.slides-list {
+	list-style: none;
+	background: url(../img/slider-background.png) 50% 10% no-repeat;
 }
 
-.slider-content > ul {
-	margin: 30px 0;
-	padding: 0 0 0 20px;
-	color: #AEFFE9;
+.slide { 
+	padding: 15px 40px 0 40px; 
+	text-align: center;
+}
+
+.hide {display: none;}
+
+/* Slide Imgs*/
+
+.slide-img {
+	display: inline-block;
+	float: left;
+	transition: transform 0.5s;
+}
+.slide-img:hover{
+	transform: scale(1.03);
+}
+.slide-img img {
+	max-width: 100%;
+}
+
+/* Slide txt*/
+
+.slide-txt{
+	display: inline-block;
+	min-width: 220px;
+	width: calc(100% - 530px);
+	vertical-align: top;
+	margin: 40px 0 0 35px;
+	text-align: left;
+	color: white;	
+}
+
+.slide-txt h1,
+.slide-txt ul {
+	margin-bottom: 30px; 
+}
+
+/* Slide txt > ul*/
+
+.slide-txt ul{
+	margin-left: 20px;
 	list-style-image: url(../img/list-img.png);
 }
-
-.slider-content  li {
-	margin-top: 5px; 
+.slide-txt li {
+	margin-top: 5px;
 }
 
+/* Slide txt > ul > button*/
 .request-button {
-	display: block;
+	display: inline-block;
 	text-decoration: none;
 	outline: none;
 	cursor: pointer;
@@ -276,92 +337,58 @@ html, body, ul, h1, h2, a, input {
 .request-button:hover {
 	box-shadow: 0 0 50px #C57622;
 	color: #CCCCCC;
-	transform: scale(1.1);
+	transform: scale(1.05);
 }
 
 .request-button > span {font-weight: bold;}
 
-/*Slider>Buttons*/
+@media screen and (max-width: 860px) {	
 
-.btn {
-	position: absolute;
-	top: 50%;
-	margin: 10px 0;
-	width: 30px;
-	height: 30px;
-	border-radius: 50%;
-	cursor: pointer;
-}
-
-.btn:hover {
-	box-shadow: 0 0 40px #eee;
-}
-
-#prew {
-	left: 15px;
-	background: white url(../img/prew.png) no-repeat 10px 50%;
-}
-
-#next{
-	right: 15px;
-	background: white url(../img/next.png) no-repeat 12px 50%;
-}
-
-/*Slider > imgs*/
-
-.slider-imgs {
-	position: absolute;
-	overflow: hidden;
-	min-width: 310px;
-	width: 100%;
-	max-width: 485px;
-	height: 427px;
-	top: 20px;
-	left: 50px;	
-}
-
-.slide1,
-.slide2,
-.slide3 {
-	width: 100%;
-	height: 100%;
-}
-
-.slider-imgs .slide1 {
-	background: url(../img/slide1.png) no-repeat -5px -5px;
-}
-.slider-imgs .slide2 {background: url(../img/slide2.png) no-repeat -5px -5px;}
-.slider-imgs .slide3 {background: url(../img/slide3.png) no-repeat -5px -5px;}
-
-@media screen and (max-width: 960px) {
-	
-	.slider {
-		padding-bottom: 0;
+	.slider .layout {
+		padding: 0;
 	}
 
-	.slider-content,
-	.slider-imgs {
+	#prew {
+		left: 5px;
+	}
+
+	#next{
+		right: 5px;
+	}
+
+	.slide-txt {
+		width: auto;
+		max-width: 480px;
+		margin: 0 0 -40px 0;
+	}
+
+	.slide-img {
 		float: none;
-		margin: 0 auto;
-	}
-	
-	.btn {
-		position: static;
+		position: relative;
+		top: 50px;
 	}
 
-	.slider-imgs {
-		position: static;
-		border-radius: 5px;
+	.request-button {
+		padding: 10px 20px;
 	}
+
+	.slide-txt h1,
+	.slide-txt ul {
+	margin-bottom: 15px; 
 }
+
+}
+
+
+
+
+
 
 
 /*Main*/
 
-.main {
-	padding: 85px 0 60px;
-}
 
+/*.wrap {background-color: gray;}*/
 .content-block {
 	float: left;
 	width: 48%; 
@@ -496,7 +523,7 @@ html, body, ul, h1, h2, a, input {
 .footer {
 	background-color: #ECECEC;
 	font-size: 0.8em; 
-	padding: 10px 0 130px;
+	
 }
 
 /*footer > logo*/

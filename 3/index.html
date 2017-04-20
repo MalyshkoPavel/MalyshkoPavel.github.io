@@ -50,16 +50,14 @@
 		</nav>
 
 		<div class="slider">
-			<div class="layout clearfix">
+			<div class="layout">
 				
 				<div class="btn prew" id="prew"></div>
 				
 				<ul class="slides-list">
-					<li class="first slide">
-						<img src="files/img/slide1.png" alt="project1" class="slide-img">
-						
+					<li class="slide">
 						<div class="slide-txt">
-							<h1>We createbeautiful websites and graphics for the web!</h1>
+							<h1>We create beautiful websites and graphics for the web!</h1>
 							<ul>
 								<li>Lorem ipsum dolor sit amet, consectetur.	</li>
 								<li>Lorem ipsum dolor sit amet.</li>
@@ -67,9 +65,13 @@
 							</ul>
 							<a href="#" class="request-button">Request a <span>FREE</span> Quote Today</a>
 						</div>
+
+						<a href="#" class="slide-img">
+							<img src="files/img/slide1.png" alt="project1">
+						</a>
 					</li>
 
-					<li class="second slide">
+					<li class="slide hide">
 						<img src="files/img/slide2.png" alt="project2" class="slide-img">
 						
 						<div class="slide-txt">
@@ -83,7 +85,7 @@
 						</div>
 					</li>
 
-					<li class="third slide">
+					<li class="slide hide">
 						<img src="files/img/slide2.png" alt="project2" class="slide-img">
 						
 						<div class="slide-txt">
@@ -96,7 +98,6 @@
 							<a href="#" class="request-button">Request a <span>FREE</span> Quote Today</a>
 						</div>
 					</li>
-
 				</ul>
 
 				<div class="btn next" id="next"></div>
@@ -104,9 +105,10 @@
 		</div>
 
 		<main class="main">
-			<div class="layout">
+			<div class="layout clearfix">
 
-				<section class="content-block services">
+				<div class="wrap clearfix">
+					<section class="content-block services">
 					<header>
 						<h2>Featured Services</h2>
 						<p class="description">Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
@@ -143,9 +145,9 @@
 							</a>
 						</section>
 					</nav>
-				</section>
+					</section>
 
-				<section class="content-block what-we-do">
+					<section class="content-block what-we-do">
 					<header>
 						<h2>What We Do</h2>
 						<p class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda laboriosam eius expedita modi dolor harum. Eos debitis in velit. Inventore.</p>
@@ -156,36 +158,38 @@
 					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque placeat earum obcaecati perferendis porro officia culpa cupiditate possimus illo, velit!</p>
 
 					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis accusamus, odio non perferendis libero sed voluptate nobis tempore expedita cupiditate!</p>
-				</section>
+					</section>
+				</div>
+				<div class="wrap clearfix">
+					<section class="content-block news">
+						<header>
+							<h2>News &amp; Events</h2>
+						</header>
 
-				<section class="content-block news">
-					<header>
-						<h2>News &amp; Events</h2>
-					</header>
+						<article>
+							<time datetime="2009-04-05" class="date">5th/April/2009</time>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. In blanditiis quae cupiditate, earum illo necessitatibus?</p>
+						</article>
 
-					<article>
-						<time datetime="2009-04-05" class="date">5th/April/2009</time>
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. In blanditiis quae cupiditate, earum illo necessitatibus?</p>
-					</article>
+						<article>
+							<time datetime="2009-04-06" class="date">6th/April/2009</time>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. In blanditiis quae cupiditate, earum illo necessitatibus?</p>
+						</article>
 
-					<article>
-						<time datetime="2009-04-06" class="date">6th/April/2009</time>
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. In blanditiis quae cupiditate, earum illo necessitatibus?</p>
-					</article>
+						<button class="more-news">more news</button>
+					</section>
 
-					<button class="more-news">more news</button>
-				</section>
+					<section class="content-block quotes">
+						<header>
+							<h2>What my clients are saying</h2>
+						</header>
 
-				<section class="content-block quotes">
-					<header>
-						<h2>What my clients are saying</h2>
-					</header>
-
-					<article>
-						<q>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque natus nostrum, ullam, fugiat consectetur similique ratione eveniet consequuntur molestiae. Illo!</q>
-						<cite>-John Smith, webdesigner</cite>
-					</article>
-				</section>
+						<article>
+							<q>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque natus nostrum, ullam, fugiat consectetur similique ratione eveniet consequuntur molestiae. Illo!</q>
+							<cite>-John Smith, webdesigner</cite>
+						</article>
+					</section>
+				</div>
 			</div>
 		</main>
 
