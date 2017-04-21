@@ -1,0 +1,157 @@
+
+@media screen and (min-width: 420px){
+
+	.services a{
+		float: left;
+
+		width: 50%;
+	}
+}
+
+@media screen and (max-width: 720px) {
+	
+	/*Header*/
+
+	.searching {
+		position: relative;
+
+		text-align: right;
+	}
+
+  /*Navigation*/
+
+  .mobile-btn {
+		display: block;
+		position: relative;
+		left: 0;
+    
+    box-sizing: border-box;
+		height: 50px;
+		width: 50px;
+		margin-left: 5px; 
+		padding: 10px;
+    
+    border-radius: 5px;
+
+		background-color: #777;
+		transition: left 0.5s;
+	}
+
+	.mobile-btn span {
+	  display: block;
+	  position: relative;
+
+    margin: 7px 0 0;
+	  height: 5px;
+
+	  background-color: #fff;
+	  transition: transform 0.5s;
+	}
+
+	.mobile-btn span.first {margin-top: 0;}
+
+	.list {
+		position: absolute;
+		top: 72px;
+    left: -500px;
+    z-index: 2;
+
+    width: 50%;
+    padding: 10px;
+
+    border-right: 1px solid gray;
+		border-bottom: 1px solid gray;
+    border-radius: 0 0 10px 0;
+
+		text-align: center;
+		
+		background: #2FB59B;
+		transition: left 0.5s;
+	}
+	
+	.list li {
+		float: none;
+
+		margin-top: 5px;
+	}
+
+	.list li:first-child {margin-top: 0;}
+
+	.mobile-btn-slide {left: calc(100% - 60px);}
+
+	.mobile-list-slide {left: 0;}
+
+	.mobile-btn-slide span.first {
+		top: 12px;
+
+  	-moz-transform: rotate(45deg);
+  	-ms-transform: rotate(45deg);
+  	-webkit-transform: rotate(45deg);
+  	-o-transform: rotate(45deg);
+  	transform: rotate(45deg);
+	}
+
+	.mobile-btn-slide span.second {opacity: 0;}
+
+	.mobile-btn-slide span.third {
+		bottom: 12px;
+
+		-moz-transform: rotate(-45deg);
+		-ms-transform: rotate(-45deg);
+  	-webkit-transform: rotate(-45deg);
+  	-o-transform: rotate(-45deg);
+  	transform: rotate(-45deg);
+	}
+
+	/*Main*/
+
+	.main .layout {padding-bottom: 10px;}
+
+	.content-block {
+		float: none;
+
+		width: auto;
+		margin: 0 0 30px;
+	}
+
+	/*Footer*/
+
+	.footer {
+    padding-bottom: 30px;
+
+		text-align: center;
+	}
+
+	.footer .info {float: none;}
+}
+
+@media screen and (max-width: 860px) {	
+
+	.slider .layout {padding: 0;}
+
+	#prew {left: 5px;}
+
+	#next{right: 5px;}
+
+	.slide-txt {
+		width: auto;
+		max-width: 480px;
+		margin: 0 0 -40px 0;
+	}
+
+	.slide-img {
+		float: none;
+		position: relative;
+		top: 50px;
+	}
+
+	.request-button {padding: 10px 20px;}
+
+	.slide-txt h1,
+	.slide-txt ul {margin-bottom: 15px;}
+}
+
+@media screen and (max-width: 960px) {
+	
+	.main {padding-top: 40px;}
+}
