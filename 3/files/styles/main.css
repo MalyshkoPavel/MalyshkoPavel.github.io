@@ -155,16 +155,47 @@ html, body, ul, h1, h2, a, input {
 	color: white;
 }
 
+
 /*Slider*/
 
 .slider {
+	height: 385px;
+	margin: 0 0 100px 0; 
+
 	border-top: 1px solid #FCFFFA;
 	border-bottom: 1px solid black;
 
-	background: #53D1AF;
+	background: #53D1AF url(../img/slider-background.png) 50% 80% no-repeat;
 }
 
-.slider .layout {padding: 0 10px 45px 10px;}
+.slider-box {
+	position: relative;
+	
+	box-sizing: border-box;
+	height: 490px;
+	width: 990px;
+	margin: 0 auto;
+	padding: 23px 0 0 0; 
+
+	overflow: hidden;
+
+}
+
+.slides-list {
+	position: relative;
+
+	height: 490px;
+	width: 10000px;
+}
+
+.slide { 
+	float: left;
+
+	height: 490px;
+	width: 990px;
+
+	text-align: center;
+}
 
 /*Slider>Buttons*/
 
@@ -184,43 +215,24 @@ html, body, ul, h1, h2, a, input {
 .btn:hover {box-shadow: 0 0 40px #eee;}
 
 #prew {
-	left: 15px;
+	left: 10px;
 
 	background: white url(../img/prew.png) no-repeat 10px 50%;
 }
 
 #next{
-	right: 15px;
+	right: 10px;
 
 	background: white url(../img/next.png) no-repeat 12px 50%;
 }
 
-/*Slider > Content*/
 
-.slides-list {
-	list-style: none;
-
-	background: url(../img/slider-background.png) 50% 10% no-repeat;
-}
-
-.slide { 
-	padding: 15px 40px 0 40px; 
-
-	text-align: center;
-}
-
-.hide {display: none;}
 
 /* Slide Imgs*/
 
 .slide-img {
 	display: inline-block;
-	float: left;
-
-	transition: transform 0.5s;
 }
-
-.slide-img:hover{transform: scale(1.03);}
 
 .slide-img img {max-width: 100%;}
 
@@ -229,9 +241,9 @@ html, body, ul, h1, h2, a, input {
 .slide-txt{
 	display: inline-block;
 
-	min-width: 220px;
-	width: calc(100% - 530px);
-	margin: 40px 0 0 35px;
+	min-width: 320px;
+	width: 40%;
+	margin: 40px 0 0 25px;
 
 	vertical-align: top;
 	text-align: left;
@@ -270,6 +282,8 @@ html, body, ul, h1, h2, a, input {
 	background: -ms-linear-gradient(top, #F4A211 0%, #E56000 100%);
 	background: -webkit-linear-gradient(top, #F4A211 0%, #E56000 100%);
 	background: -o-linear-gradient(top, #F4A211 0%, #E56000 100%);
+	background: linear-gradient(to top, #F4A211 0%, #E56000 100%);
+	
 	box-shadow: 1px 1px 2px black;
 	color: white;
 }
@@ -359,7 +373,7 @@ html, body, ul, h1, h2, a, input {
 	height: 48px;
 	width: 48px;
 
-	background: url(../img/sprite.png) no-repeat 1px 0px;
+	background: url(../img/sprite.png) no-repeat 1px 0;
 }
 
 .service2 > a:before {background-position: -46px 0;}
