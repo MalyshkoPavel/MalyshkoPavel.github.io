@@ -94,8 +94,8 @@ ul.bxslider {
   background-position: 0 0;
 }
 .bx-wrapper .bx-next {
-  right: -40px;
   background: url('images/controls.png') no-repeat -43px -32px;
+  right: -40px;
 }
 .bx-wrapper .bx-next:hover,
 .bx-wrapper .bx-next:focus {
