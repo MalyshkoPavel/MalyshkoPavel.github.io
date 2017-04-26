@@ -8,6 +8,13 @@
 	}
 }
 
+@media screen and (max-width: 420px){
+	
+	.slide {
+		padding: 0 10px; 
+	}
+}
+
 @media screen and (max-width: 720px) {
 	
 	/*Header*/
@@ -127,22 +134,6 @@
 
 @media screen and (max-width: 860px) {	
 
-	.slider .layout {padding: 0;}
-
-	#prew {left: 5px;}
-
-	#next{right: 5px;}
-
-	.slide-txt {
-		width: auto;
-		max-width: 480px;
-		margin: 0 0 -40px 0;
-	}
-
-	.slide-img {
-		position: relative;
-		top: 50px;
-	}
 
 	.request-button {padding: 10px 20px;}
 
@@ -151,6 +142,14 @@
 }
 
 @media screen and (max-width: 960px) {
-	
-	.main {padding-top: 40px;}
+	.slider {
+		height: auto;
+		margin: 0;
+	}
+
+	.slide-txt {
+		width: auto;
+		max-width: 480px;
+		margin: 0;
+	}
 }

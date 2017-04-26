@@ -159,43 +159,28 @@ html, body, ul, h1, h2, a, input {
 /*Slider*/
 
 .slider {
-	height: 385px;
-	margin: 0 0 100px 0; 
+	height: 380px;
+	margin: 0 0 100px; 
 
 	border-top: 1px solid #FCFFFA;
 	border-bottom: 1px solid black;
 
-	background: #53D1AF url(../img/slider-background.png) 50% 80% no-repeat;
+	background: #53D1AF url(../img/slider-background.png) 50% 70% no-repeat;
 }
 
 .slider-box {
-	position: relative;
-	
-	box-sizing: border-box;
-	height: 490px;
-	width: 990px;
+	max-width: 990px;
 	margin: 0 auto;
-	padding: 23px 0 0 0; 
-
-	overflow: hidden;
-
-}
-
-.slides-list {
-	position: relative;
-
-	height: 490px;
-	width: 10000px;
-}
-
-.slide { 
-	float: left;
-
-	height: 490px;
-	width: 990px;
+	padding: 25px 0 0; 
 
 	text-align: center;
 }
+
+.slide {
+	padding: 0 50px; 
+}
+
+
 
 /*Slider>Buttons*/
 
