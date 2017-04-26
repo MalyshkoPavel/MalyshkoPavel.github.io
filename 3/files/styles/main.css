@@ -169,16 +169,15 @@ html, body, ul, h1, h2, a, input {
 }
 
 .slider-box {
-	max-width: 990px;
+	max-width: 890px;
+	width: calc(100% - 100px);
 	margin: 0 auto;
 	padding: 25px 0 0; 
 
 	text-align: center;
 }
 
-.slide {
-	padding: 0 50px; 
-}
+
 
 
 
