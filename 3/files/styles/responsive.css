@@ -17,15 +17,15 @@
 		padding: 0 10px; 
 	}
 	
-	.slider .bx-wrapper .bx-prev {
+	.bx-wrapper .bx-prev {
 		left: 10px;
 	}
 
-	.slider .bx-wrapper .bx-next {
+	.bx-wrapper .bx-next {
 		right: 10px;
 	}
 
-	.slider .bx-wrapper .bx-controls-direction a {
+	.bx-wrapper .bx-controls-direction a {
 		top: 40%;
 	}
 }
