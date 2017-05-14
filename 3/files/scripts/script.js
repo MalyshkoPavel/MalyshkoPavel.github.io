@@ -10,7 +10,7 @@ $(document).ready(function(){
   $('.bxslider').bxSlider({
 
 		pager: false,
-		auto: true,
+		// auto: true,
 		speed: 1000,
 		autoHover: true,
 		pause: 6000
