@@ -161,8 +161,8 @@ a {
 /*Slider*/
 
 .slider {
-	height: 385px;
-	margin: 0 0 100px; 
+	margin: 0 0 65px; 
+	padding-top: 25px;
 
 	border-top: 1px solid #FCFFFA;
 	border-bottom: 1px solid black;
@@ -174,10 +174,11 @@ a {
 	max-width: 890px;
 	width: calc(100% - 100px);
 	margin: 0 auto;
-	padding: 25px 0 0; 
 
 	text-align: center;
 }
+
+/*Slider settings*/
 
 .bx-wrapper {
 	margin-bottom: 0;
@@ -188,6 +189,11 @@ a {
   border: none;
 
   background: none; 
+}
+
+.bx-viewport {
+	min-height: 385px;
+	margin: 0 0 -65px; 
 }
 
 .bx-next,
@@ -203,11 +209,9 @@ a {
   background: url('../img/controls.png') no-repeat 0 -32px;
 }
 
-
-/* Slide img*/
-
-
-.slide-img {display: inline-block;}
+.slide-img {
+  display: inline-block;
+}
 
 .slide-img img {max-width: 100%;}
 
@@ -215,8 +219,10 @@ a {
 	display: inline-block;
 
 	min-width: 320px;
-	width: 40%;
-	margin: 0;
+	max-width: 40%;
+	margin-bottom: 100px; 
+	padding: 35px 0 20px 30px;
+
 
 	vertical-align: top;
 	text-align: left;
@@ -274,6 +280,8 @@ a {
 }
 
 .request-button > span {font-weight: bold;}
+
+
 
 /*Main*/
 

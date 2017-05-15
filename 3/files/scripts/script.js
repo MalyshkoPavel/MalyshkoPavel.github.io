@@ -8,7 +8,7 @@ $(document).ready(function(){
 
 	//Slider
   $('.bxslider').bxSlider({
-
+  		adaptiveHeight: true,
 		pager: false,
 		// auto: true,
 		speed: 1000,
